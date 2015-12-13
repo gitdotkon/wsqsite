@@ -20,4 +20,21 @@ var browser={
 $(document).ready(function(e) {
 	if(browser.versions.mobile)
 		window.addEventListener("load",function(){FastClick.attach(document.body)},false);
+	// Preload images
+	preloadImages = function () {
+    		$('img.preload').each(function(i,e){
+    			$(e).attr('src', $(this).data('src'));
+    		})
+	};
+	preloadImages();
+	// Ajax call error handling
+	$(document).ajaxError(function (e, xhr, settings, error) {
+  		console.log(error);
+	});
+	// Back to top button
+	$('.top').click(function (e) {
+  		e.preventDefault();
+  		$('html, body').animate({scrollTop: 0}, 800);
+	});
+	$('.preloading').fadeOut('fast');
 })
