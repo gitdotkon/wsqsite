@@ -7,8 +7,12 @@ scheduling list
 
 ### 2015-12-13
 Frameworks setup
+
 !keywords, description, favicon & media video
+
 !preloading not available
+
 !webfonts available but only worked at hanswu.com
 
-# demo url http://www.hanswu.com/project/wsq
+
+### demo url http://www.hanswu.com/project/wsq
