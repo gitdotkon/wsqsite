@@ -19,6 +19,8 @@ a {text-decoration: none; color:#333;}
 h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {display: inline;}
 h1, h2, h3, h4, h5, h6{color:#000;line-height:100%;}
 a,input{ outline:none;}
+img{max-width: 100%;}
+img.responsive{width: 100%;}
 ul > li{list-style:none; }
 sub {vertical-align: sub; font-weight:normal; font-size:60%;}
 sup {vertical-align:super; font-weight:normal; font-size:80%;}
@@ -31,19 +33,41 @@ body {color:#fff;font-size:14px;height:100%; line-height: 1; min-width:320px;}
 html body{font-family:Helvetica,Arial,sans-serif;}
 body *{font-family: 'open sans',Helvetica,Arial,sans-serif;;}
 h1, h2, h3, h4, h5, h6{font-family: 'Raleway',Helvetica,Arial,sans-serif;}
+img.preload{width: 200px; height: 200px; background: url(../images/loadingimg.gif) center;}
 .centerElement{text-align: center; margin-left: auto; margin-right: auto;}
 .redbg{background-color: #d60000;}
+.sr_only{display: none;}
+.main{position: absolute; top: 0; left: 0;}
+
+/*********preloading start*********/
 .preloading{position: fixed; top: 0;left: 0; width: 100%; height: 100%; z-index: 1000; background-color: #333;}
 .loading_text{ width: 100%; top: 50%; height: 50px; margin-top: -25px; position: absolute;}
 .preloading h3,.preloading p{color: #f0f0f0;text-align: center;}
 .preloading h3{margin-bottom: 15px; font-size: 16px;}
+/*********preloading end***********/
 
-.main{position: absolute; top: 0; left: 0;}
+/*********header start*********/
 header{position: fixed; top: 0; left: 0; width: 100%; height: 90px;}
 .logo{position: absolute;top: 15px; left: 15px;}
 .logo_right{position: absolute;top: 30px; right: 15px;}
-nav{position: absolute; width: 853px; left: 50%; margin-left: -426.5px;}
+nav{position: absolute; width: 853px; left: 50%; margin-left: -460px;}
 nav li{float: left;}
 nav li:not(.last){margin-right: 30px;}
 nav li a{color: #fff; line-height: 90px;}
+.togglebtn{position: absolute; display: none; width: 42px; left: 50%; margin-left: -21px; height: 26px; top: 35px; will-change: transform;-webkit-transition: all .5s;-moz-transition: all .5s; transition: all .5s;}
+.togglebtn div{position: relative; background-color: #fff; border-radius: 4px; -webkit-border-radius: 4px;-moz-border-radius: 4px; height: 6px;top: 10px;}
+.togglebtn div:before,.togglebtn div:after{position: absolute; content: ''; border-radius: 4px; -webkit-border-radius: 4px;-moz-border-radius: 4px; background-color: #fff; height: 6px; width: 100%;}
+.togglebtn div:before{top: -10px;}
+.togglebtn div:after{top: 10px;}
+.togglebtn.active{transform: matrix();}
+@media only screen and (max-width: 1240px) {
+	nav{display: none;}
+	.togglebtn{display: block;}
+}
+@media only screen and (max-width: 767px) {
+	.togglebtn{left: auto; margin-left: auto; right: 15px;}
+	.logo_right{display: none;}
+}
+/*********header end***********/
+
 /*********page.css end***********/

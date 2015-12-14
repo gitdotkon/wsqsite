@@ -23,7 +23,7 @@ $(document).ready(function(e) {
 	// Preload images
 	preloadImages = function () {
     		$('img.preload').each(function(i,e){
-    			$(e).attr('src', $(this).data('src'));
+    			$(e).attr('src', $(this).data('src')).removeClass('preload');
     		})
 	};
 	preloadImages();
@@ -36,5 +36,13 @@ $(document).ready(function(e) {
   		e.preventDefault();
   		$('html, body').animate({scrollTop: 0}, 800);
 	});
+	//remove loading
 	$('.preloading').fadeOut('fast');
+	
+	//导航
+	$('.togglebtn').hover(function(){
+		$(this).addClass('active');
+	},function(){
+		$(this).removeClass('active');
+	})
 })
