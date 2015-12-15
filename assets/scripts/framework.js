@@ -40,9 +40,9 @@ $(document).ready(function(e) {
 	$('.preloading').fadeOut('fast');
 	
 	//导航
-	$('.togglebtn').hover(function(){
-		$(this).addClass('active');
-	},function(){
-		$(this).removeClass('active');
+	$('.toggle_menu_btn').click(function(){
+		$(this).toggleClass('close');
+		$('nav').toggleClass('show');
 	})
+	
 })
