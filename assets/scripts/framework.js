@@ -23,7 +23,9 @@ var browser={
 $(document).ready(function(e) {
 	if(browser.versions.mobile){
 		window.addEventListener("load",function(){FastClick.attach(document.body)},false);
-	}
+		$('html').addClass('portable');
+	}else
+		$("html").addClass('desktop');
 	// Preload images
 	preloadImages = function () {
     		$('img.preload').each(function(i,e){
@@ -48,5 +50,28 @@ $(document).ready(function(e) {
 		$(this).toggleClass('close');
 		$('nav').toggleClass('show');
 	})
-	
+	//countdown to launch
+	function countdown(){
+		var splt="-",
+			countdownHtml='',
+			launchDay="2017-7-1";
+		var now=new Date();
+		var year = now.getFullYear();       //年
+        var month = now.getMonth() + 1;     //月
+        var day = now.getDate();            //日
+        var today=year+splt+month+splt+day;
+        var countdowndays=GetDateDiff(today,launchDay);
+        _arr=countdowndays.toString().split('');
+        for(i=0;i<_arr.length;i++){
+        		countdownHtml+='<b>'+_arr[i]+'</b>'
+        }
+		$('.countdown span').html(countdownHtml);
+	}
+	countdown()
+	function GetDateDiff(startDate,endDate) {  
+    var startTime = new Date(Date.parse(startDate.replace(/-/g,   "/"))).getTime();     
+    var endTime = new Date(Date.parse(endDate.replace(/-/g,   "/"))).getTime();     
+    var dates = Math.abs((startTime - endTime))/(1000*60*60*24);     
+    return  dates;    
+	}
 })
