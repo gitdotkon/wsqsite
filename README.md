@@ -5,6 +5,10 @@ scheduling list
 
 1. [Frameworks setup](#2015-12-13)
 
+2. [Navigation](#2015-12-14)
+
+3. [Page One](#2015-12-15)
+
 ### 2015-12-13
 
 Frameworks setup
@@ -15,9 +19,13 @@ Frameworks setup
 
 !webfonts available but only worked at hanswu.com
 
+### 2015-12-14
 
-<<<<<<< Updated upstream
+Navigation ok
+
+### 2015-12-15
+
+Page 1 ok
+
+
 ### demo url http://www.hanswu.com/project/wsq
-=======
-### demo url http://www.hanswu.com/project/wsq
->>>>>>> Stashed changes
