@@ -11,6 +11,10 @@
 <link rel="shortcut icon" href="favicon.ico"/>
 <title>WANDA STUDIOS QINDAO</title>
 <!--styles-->
+<!-- google webfonts "open sans" & "Raleway"-->
+<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'/>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'/>
+
 <link rel="stylesheet" type="text/css" href="assets/styles/framework.css"/>
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
@@ -48,18 +52,60 @@
 	</header>
 	<div class="pages">
 		<section class="page" id="page-1">
-			<video loop="loop" autoplay="autoplay">
-				<source src="assets/images/wsq-flyover.webm" type="video/webm" />
-				Your browser does not support the video tag.
-			</video>
-			<div class="mask">
-				<span class="desk"><img src="assets/images/bg-1-mask-large.png" class="responsive"/></span>
-				<span class="tablet"><img src="assets/images/bg-1-mask-medium.png" class="responsive"/></span>
-				<span class="pad"><img src="assets/images/bg-1-mask-small.png" class="responsive"/></span>
-				<span class="mobile"><img src="assets/images/bg-1-mobile-combine.jpg" class="responsive"/></span>
+			<div class="videobg">
+				<video loop="loop" autoplay="autoplay" class="pad">
+					<source src="assets/images/wsq-flyover.ogg" type="video/ogg">
+  					<source src="assets/images/wsq-flyover.mp4" type="video/mp4">
+					<source src="assets/images/wsq-flyover.webm" type="video/webm" />
+					Your browser does not support the video tag.
+				</video>
 			</div>
+			
+			<div class="mask"></div>
 			<div class="countdown tablet">
 				countdown to launch <span></span> days
+			</div>
+		</section>
+		<section class="page" id="page-2">
+			<div class="projectinfo">
+				<div class="infomation">
+					<span class="left-quotation"><img src="assets/images/quote-left.png"/></span>
+					<span class="right-quotation"><img src="assets/images/quote-right.png"/></span>
+					<h2 class="infotext"><b>" </b>Qingdao Oriental Movie Metropolis will be the most advanced movie studio with the largest investment in the world. Wanda has invited the world's leading companies and talent to develop this project. I believe that with its opening… <br />it will become <span class="emphasize">one of the major centers for global film.</span><b> "</b></h2>
+					<h3 class="boss"><span class="wang">Wang Jianlin</span><br />Chairman of the Wanda Group</h3>
+				</div>
+			</div>
+		</section>
+		<section class="page" id="page-3">
+			<div class="golden-line pad">
+				<img src="assets/images/goldline_1.png"/>
+			</div>
+			<div class="promise pad">
+				<div class="row">
+					<div class="responsive-half picture">
+					<img src="assets/images/2-studio-sketch.png"/>
+				</div>
+				<div class="responsive-half text">
+					<div class="content">
+						<p><img src="assets/images/promise.png"/><span class="sr_only">The Wanda Promise</span></p>
+						<p>Wanda Studios Qingdao, the centerpiece of the Qingdao Oriental Movie Metropolis, is a US $10 billion commercial property investment by its parent company, the Wanda Group.</p>
+						<p>Spread across 165.41 hectares, this large-scale production base features a substantial number of state-of-the-art sound stages, built to the highest international technical standards. A large backlot will house built-to-order shooting locations with infinite capacity to customize to production needs.</p>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+				</div>
+				<div class="row">
+					<div class="responsive-half text">
+					<div class="content">
+						<p>Slated to open July 2017, Wanda Studios Qingdao (WSQ) will offer comprehensive creative and production services to filmmakers around the world. Together with leading partners in the global film and television production industry, WSQ is building a new hub of creativity and defining one of the world’s largest film and television production destinations.</p>
+					</div>
+				</div>
+				<div class="responsive-half picture">
+					<img src="assets/images/2-studio-overview.png"/>
+				</div>
+				<div class="clearfix"></div>
+				</div>
+				
 			</div>
 		</section>
 	</div>
@@ -71,25 +117,28 @@
 			<li><a href="#"><span class="sr_only">Where We Are</span></a></li>
 			<li><a href="#"><span class="sr_only">Our World-Class Facilities</span></a></li>
 			<li><a href="#"><span class="sr_only">What We Offer</span></a></li>
+			<li><a href="#"><span class="sr_only">Get In Touch</span></a></li>
 		</ul>
 	</div>
-	<!--<img data-src="assets/images/1.jpg" class="preload"/>
-	<img data-src="assets/images/2.jpg" class="preload"/>
-	<img data-src="assets/images/3.jpg" class="preload"/>
-	<img data-src="assets/images/4.jpg" class="preload"/>
-	<img data-src="assets/images/5.jpg" class="preload"/>-->
 </div>
 <div class="preloading">
 	<div class="loading_text">
 		<h3>LOADING RESOURCES</h3>
 		<p><img src="assets/images/loading.gif"/></p>
 	</div>
+	<div class="sr_only">
+		<img data-src="assets/images/logo.png" class="preload"/>
+		<img data-src="assets/images/logo_right.png" class="preload"/>
+		<img data-src="assets/images/promise.png" class="preload"/>
+		<img data-src="assets/images/promise.png" class="preload"/>
+		<img data-src="assets/images/2-studio-overview.png" class="preload"/>
+	</div>
 </div>
 <!--scripts-->
 <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js" type="text/javascript"></script>
 <script src="//cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js" type="text/javascript"></script>
 <script type="text/javascript">
-if(!jQuery)
+if(typeof jQuery == 'undefined')
 	document.write('<script src="assets/scripts/jquery.min.js"><\/script><script src="assets/scripts/fastclick.min.js"><\/script>')
 </script>
 <script src="assets/scripts/prefix.js" type="text/javascript"></script>

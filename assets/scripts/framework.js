@@ -37,13 +37,48 @@ $(document).ready(function(e) {
 	$(document).ajaxError(function (e, xhr, settings, error) {
   		console.log(error);
 	});
+	//get window height
+	var windowHeight=$(window).height(),
+		windowWidth=$(window).width(),pageHeight;
+	function setPageHeight(){
+		windowHeight=$(window).height();
+		windowWidth=$(window).width();
+		$('.page').height(windowHeight-90);
+		
+		//scrollParallax need body height
+		$('body').height(windowHeight*7);
+		//video fullscreen
+		windowWidth/16>=windowHeight/9? $('video').height(windowWidth*9/16):$('video').width(windowHeight*16/9);
+		//promise in one screen
+		pageHeight=$('.page').height();
+		$('.promise.pad').css({'width':pageHeight*32/27,'margin-left':pageHeight*32/27/2*-1,'padding-top':pageHeight*4/27});
+		$('.promise.pad .text').each(function(i,e){
+			textHeight=i?$(e).height():$(e).height()+($(e).width()*0.9*13/69);
+			imgHeight=$(e).siblings('.picture').width()*399/613;
+			console.log('文字'+i+':'+textHeight+'\n图片'+i+':'+imgHeight)
+			textHeight>=imgHeight?$(e).height(imgHeight+10):$(e).css('margin-top',(imgHeight-textHeight)/2);
+			// 552 104   69 13
+		})
+	}
+	setPageHeight();
+	$(window).resize(function(){
+		setPageHeight();
+	})
+	function scrollTop(){
+		$('html, body').animate({scrollTop: 0}, 800);
+	}
+	scrollTop();
+	//Parallax init
+	$('.desktop').stellar()
+	
+	//remove loading
+	$('.preloading').fadeOut('fast');
+	
 	// Back to top button
 	$('.top').click(function (e) {
   		e.preventDefault();
-  		$('html, body').animate({scrollTop: 0}, 800);
+  		scrollTop();
 	});
-	//remove loading
-	$('.preloading').fadeOut('fast');
 	
 	//navigation
 	$('.toggle_menu_btn').click(function(){
@@ -56,9 +91,9 @@ $(document).ready(function(e) {
 			countdownHtml='',
 			launchDay="2017-7-1";
 		var now=new Date();
-		var year = now.getFullYear();       //年
-        var month = now.getMonth() + 1;     //月
-        var day = now.getDate();            //日
+		var year = now.getFullYear();
+        var month = now.getMonth() + 1;
+        var day = now.getDate();
         var today=year+splt+month+splt+day;
         var countdowndays=GetDateDiff(today,launchDay);
         _arr=countdowndays.toString().split('');
@@ -74,4 +109,5 @@ $(document).ready(function(e) {
     var dates = Math.abs((startTime - endTime))/(1000*60*60*24);     
     return  dates;    
 	}
+	
 })
