@@ -49,16 +49,21 @@ $(document).ready(function(e) {
 		$('body').height(windowHeight*7);
 		//video fullscreen
 		windowWidth/16>=windowHeight/9? $('video').height(windowWidth*9/16):$('video').width(windowHeight*16/9);
-		//promise in one screen
+		//
 		pageHeight=$('.page').height();
+		$('.infomation').css('padding-top',(pageHeight-$('.infomation').height())/2);
+		//console.log($('.infomation').css('padding-top'))
+		//promise in one screen
+		
 		$('.promise.pad').css({'width':pageHeight*32/27,'margin-left':pageHeight*32/27/2*-1,'padding-top':pageHeight*4/27});
 		$('.promise.pad .text').each(function(i,e){
 			textHeight=i?$(e).height():$(e).height()+($(e).width()*0.9*13/69);
 			imgHeight=$(e).siblings('.picture').width()*399/613;
-			console.log('文字'+i+':'+textHeight+'\n图片'+i+':'+imgHeight)
+			//console.log('文字'+i+':'+textHeight+'\n图片'+i+':'+imgHeight)
 			textHeight>=imgHeight?$(e).height(imgHeight+10):$(e).css('margin-top',(imgHeight-textHeight)/2);
 			// 552 104   69 13
 		})
+		
 	}
 	setPageHeight();
 	$(window).resize(function(){
