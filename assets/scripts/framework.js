@@ -46,16 +46,17 @@ $(document).ready(function(e) {
 		$('.page').height(windowHeight-90);
 		
 		//scrollParallax need body height
-		$('body').height(windowHeight*7);
+		$('body').height(windowHeight*5);
 		//video fullscreen
 		windowWidth/16>=windowHeight/9? $('video').height(windowWidth*9/16):$('video').width(windowHeight*16/9);
 		//
 		pageHeight=$('.page').height();
+		if(windowWidth<768)
 		$('.infomation').css('padding-top',(pageHeight-$('.infomation').height())/2);
 		//console.log($('.infomation').css('padding-top'))
 		//promise in one screen
 		
-		$('.promise.pad').css({'width':pageHeight*32/27,'margin-left':pageHeight*32/27/2*-1,'padding-top':pageHeight*4/27});
+		$('.promise.pad').css({'width':pageHeight*32/27,'margin-left':pageHeight*32/27/2*-1,'padding-top':pageHeight*2/27});
 		$('.promise.pad .text').each(function(i,e){
 			textHeight=i?$(e).height():$(e).height()+($(e).width()*0.9*13/69);
 			imgHeight=$(e).siblings('.picture').width()*399/613;
