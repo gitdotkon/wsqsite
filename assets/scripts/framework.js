@@ -46,16 +46,17 @@ $(document).ready(function(e) {
 		$('.page').height(windowHeight-90);
 		
 		//scrollParallax need body height
-		$('body').height(windowHeight*5);
+		$('body').height(windowHeight*5-360);
 		//video fullscreen
 		windowWidth/16>=windowHeight/9? $('video').height(windowWidth*9/16):$('video').width(windowHeight*16/9);
 		//
 		pageHeight=$('.page').height();
 		if(windowWidth<768)
-		$('.infomation').css('padding-top',(pageHeight-$('.infomation').height())/2);
+		$('.infomation').css('padding-top',(pageHeight-$('.infomation').height())/4);
+		else
+		$('.infomation').css('padding-top',135)
 		//console.log($('.infomation').css('padding-top'))
 		//promise in one screen
-		
 		$('.promise.pad').css({'width':pageHeight*32/27,'margin-left':pageHeight*32/27/2*-1,'padding-top':pageHeight*2/27});
 		$('.promise.pad .text').each(function(i,e){
 			textHeight=i?$(e).height():$(e).height()+($(e).width()*0.9*13/69);
@@ -65,6 +66,9 @@ $(document).ready(function(e) {
 			// 552 104   69 13
 		})
 		
+		//floating island
+		$floatingWidth=$('.floating span img').eq(0).width();
+		$floatingWidth?$('#islandtext').width($floatingWidth):$('#islandtext').width(450);
 	}
 	setPageHeight();
 	$(window).resize(function(){
@@ -106,14 +110,14 @@ $(document).ready(function(e) {
         for(i=0;i<_arr.length;i++){
         		countdownHtml+='<b>'+_arr[i]+'</b>'
         }
-		$('.countdown span').html(countdownHtml);
+		$('#countdown').html(countdownHtml);
 	}
 	countdown()
 	function GetDateDiff(startDate,endDate) {  
     var startTime = new Date(Date.parse(startDate.replace(/-/g,   "/"))).getTime();     
     var endTime = new Date(Date.parse(endDate.replace(/-/g,   "/"))).getTime();     
     var dates = Math.abs((startTime - endTime))/(1000*60*60*24);     
-    return  dates;    
+    return  dates;
 	}
 	
 })

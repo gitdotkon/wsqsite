@@ -23,12 +23,13 @@
 <![endif]-->
 </head>
 <body>
-<div class="sr_only">
+<div class="resources">
 	<img data-src="assets/images/logo.png" class="preload"/>
 	<img data-src="assets/images/logo_right.png" class="preload"/>
 	<img data-src="assets/images/promise.png" class="preload"/>
 	<img data-src="assets/images/2-studio-sketch.png" class="preload"/>
 	<img data-src="assets/images/2-studio-overview.png" class="preload"/>
+	<img data-src="assets/images/floating_island_bg.png" class="preload"/>
 </div>
 <div class="main">
 	<header class="redbg">
@@ -36,15 +37,14 @@
 			<img src="assets/images/logo.png"/>
 		</div>
 		<nav>
-			<ul>
-				<li><a href="#page-1">Home</a></li>
-				<li><a href="#">The Wanda Promise</a></li>
-				<li><a href="#">Our Timeline</a></li>
-				<li><a href="#">Where We Are</a></li>
-				<li><a href="#">Our World-Class Facilities</a></li>
-				<li><a href="#">What We Offer</a></li>
-				<li class="last"><a href="#">Get In Touch</a></li>
-				<div class="clearfix"></div>
+			<ul class="clearfix">
+				<li><a href="#page-1" class="title">Home</a></li>
+				<li><a href="#" class="title">The Wanda Promise</a></li>
+				<li><a href="#" class="title">Our Timeline</a></li>
+				<li><a href="#" class="title">Where We Are</a></li>
+				<li><a href="#" class="title">Our World-Class Facilities</a></li>
+				<li><a href="#" class="title">What We Offer</a></li>
+				<li><a href="#" class="title">Get In Touch</a></li>
 			</ul>
 		</nav>
 		<div class="toggle_menu_btn">
@@ -53,7 +53,7 @@
         		</div>
         		<span class="sr_only">菜单</span>
     		</div>
-		<div class="logo_right">
+		<div class="logo_promise">
 			<img src="assets/images/logo_right.png"/>
 		</div>
 	</header>
@@ -62,15 +62,15 @@
 			<div class="videobg">
 				<video loop="loop" autoplay="autoplay" class="pad">
   					<source src="assets/images/wsq-flyover.mp4" type="video/mp4"/>
-  					<source src="assets/images/wsq-flyover.ogg" type="video/ogg"/>
 					<source src="assets/images/wsq-flyover.webm" type="video/webm" />
+					<source src="assets/images/wsq-flyover.ogg" type="video/ogg"/>
 					Your browser does not support the video tag.
 				</video>
 			</div>
 			
 			<div class="mask"></div>
-			<div class="countdown tablet">
-				countdown to launch <span></span> days
+			<div class="countdown tablet title">
+				<span class="text title">countdown to global launch </span><span id="countdown" class="title"></span> days
 			</div>
 		</section>
 		<section class="page" id="page-2">
@@ -78,8 +78,8 @@
 				<div class="infomation">
 					<span class="left-quotation"><img src="assets/images/quote-left.png"/></span>
 					<span class="right-quotation"><img src="assets/images/quote-right.png"/></span>
-					<h2 class="infotext"><b>" </b>Qingdao Oriental Movie Metropolis will be the most advanced movie studio with the largest investment in the world. Wanda has invited the world's leading companies and talent to develop this project. I believe that with its opening… <br />it will become <span class="emphasize">one of the major centers for global film.</span><b> "</b></h2>
-					<h3 class="boss"><span class="wang">Wang Jianlin</span><br />Chairman of the Wanda Group</h3>
+					<p class="infotext"><b>" </b>Qingdao Oriental Movie Metropolis will be the most advanced movie studio with the largest investment in the world. Wanda has invited the world's leading companies and talent to develop this project. I believe that with its opening… <br />it will become <span class="emphasize">one of the major centers for global film.</span><b> "</b></p>
+					<p class="boss"><b class="wang">Wang Jianlin</b><br />Chairman of the Wanda Group</p>
 				</div>
 			</div>
 		</section>
@@ -114,7 +114,7 @@
 				</div>
 			</div>
 			<div class="promiseatmobile mobile">
-				<div class="logo-center">
+				<div class="logo_promise">
 					<img src="assets/images/logo_right.png"/>
 				</div>
 				<div class="slider-wrapper">
@@ -132,10 +132,36 @@
 			</div>
 		</section>
 		<section class="page" id="page-4">
-			
+			<div class="golden-line pad">
+				<img src="assets/images/goldline_2.png"/>
+			</div>
+			<div class="container">
+				<div class="video-container">
+					<!--youtube or youku-->
+				</div>
+				
+			</div>
 		</section>
 		<section class="page" id="page-5">
-			
+			<div class="yacht pad">
+				<img src="assets/images/yacht.gif"/>
+			</div>
+			<div class="map-city pad">
+				<span><img src="assets/images/4-gps.png"/></span>
+				<span class="title">Qingdao</span>
+			</div>
+			<div class="floating pad">
+				<span><img src="assets/images/floating_island_bg.png"/></span>
+				<span><img src="assets/images/floating_island.png"/></span>
+				<span><img src="assets/images/floating_island_thumbnail.png"/></span>
+				<span id="islandtext">
+					<p class="centerElement islandtitle">Wanda Studios Qingdao</p>
+					<div class="experience zone">
+						<p>Experience Zone</p>
+						<span class="verticalline"></span>
+					</div>
+				</span>
+			</div>
 		</section>
 	</div>
 	<div id="scroll_nav" class="tablet">
@@ -152,6 +178,7 @@
 </div>
 <div class="preloading">
 	<div class="loading_text">
+		<p class="logo"><img src="assets/images/logo.png"/></p>
 		<h3>LOADING RESOURCES</h3>
 		<p><img src="assets/images/loading.gif"/></p>
 	</div>
