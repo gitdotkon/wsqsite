@@ -180,7 +180,7 @@ nav li a.active{color:#ead47d;}
 .countdown span{display: inline-block; float:left;}
 .countdown span.last{ height: 46px; line-height: 46px;}
 .countdown .text{width: 120px; line-height: 18px;position: relative;top: 7px;}
-#countdown b{display: inline-block;height: 44px; background-color: #3b83af; color: #fff; margin-right: 3px; padding: 0 3px; font-weight: bolder;}
+#countdown b{font-family: 'open sans',Helvetica,Arial,sans-serif;display: inline-block;height: 44px; background-color: #3b83af; color: #fff; margin-right: 3px; padding: 0 3px; font-weight: bolder;}
 
 #scroll_nav{position: fixed;width: 12px; height: 100px;/*padding: 90px 0;*/top: 50%;margin-top: -50px;right:30px;}
 #scroll_nav li{margin-bottom: 12px;}
