@@ -9,12 +9,12 @@
 <meta name="Description" content=""/>
 <meta name="Keywords" content=""/>
 <link rel="shortcut icon" href="favicon.ico"/>
-<title>WANDA STUDIOS QINDAO</title>
+<title>Wanda Studios Qingdao</title>
 <!--styles-->
 <!-- google webfonts "open sans" & "Raleway"-->
 <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'/>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'/>
-
+<link rel="stylesheet" type="text/css" href="assets/styles/materialize.min.css">
 <link rel="stylesheet" type="text/css" href="assets/styles/framework.css"/>
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
@@ -38,13 +38,13 @@
 		</div>
 		<nav>
 			<ul class="clearfix">
-				<li><a href="#page-1" class="title">Home</a></li>
-				<li><a href="#" class="title">The Wanda Promise</a></li>
-				<li><a href="#" class="title">Our Timeline</a></li>
-				<li><a href="#" class="title">Where We Are</a></li>
-				<li><a href="#" class="title">Our World-Class Facilities</a></li>
-				<li><a href="#" class="title">What We Offer</a></li>
-				<li><a href="#" class="title">Get In Touch</a></li>
+				<li><a href="javascript:;" class="title active">Home</a></li>
+				<li><a href="javascript:;" class="title">The Wanda Promise</a></li>
+				<li><a href="javascript:;" class="title">Our Timeline</a></li>
+				<li><a href="javascript:;" class="title">Where We Are</a></li>
+				<li><a href="javascript:;" class="title">Our World-Class Facilities</a></li>
+				<li><a href="javascript:;" class="title">What We Offer</a></li>
+				<li><a href="javascript:;" class="title">Get In Touch</a></li>
 			</ul>
 		</nav>
 		<div class="toggle_menu_btn">
@@ -60,7 +60,7 @@
 	<div class="pages">
 		<section class="page" id="page-1">
 			<div class="videobg">
-				<video loop="loop" autoplay="autoplay" class="pad">
+				<video loop autoplay class="pad">
   					<source src="assets/images/wsq-flyover.mp4" type="video/mp4"/>
 					<source src="assets/images/wsq-flyover.webm" type="video/webm" />
 					<source src="assets/images/wsq-flyover.ogg" type="video/ogg"/>
@@ -69,8 +69,10 @@
 			</div>
 			
 			<div class="mask"></div>
-			<div class="countdown tablet title">
-				<span class="text title">countdown to global launch </span><span id="countdown" class="title"></span> days
+			<div class="countdown tablet title clearfix">
+				<span class="text title">Countdown to Grand Opening </span>
+				<span id="countdown" class="title"></span>
+				<span class="last title">days</span>
 			</div>
 		</section>
 		<section class="page" id="page-2">
@@ -78,40 +80,28 @@
 				<div class="infomation">
 					<span class="left-quotation"><img src="assets/images/quote-left.png"/></span>
 					<span class="right-quotation"><img src="assets/images/quote-right.png"/></span>
-					<p class="infotext"><b>" </b>Qingdao Oriental Movie Metropolis will be the most advanced movie studio with the largest investment in the world. Wanda has invited the world's leading companies and talent to develop this project. I believe that with its opening… <br />it will become <span class="emphasize">one of the major centers for global film.</span><b> "</b></p>
-					<p class="boss"><b class="wang">Wang Jianlin</b><br />Chairman of the Wanda Group</p>
+					<p class="infotext"><b>" </b>Qingdao Oriental Movie Metropolis will be the most advanced movie studio with the largest investment in the world. Wanda has invited the world's leading companies and talent to develop this project. I believe that with its opening… <br />it will become <span class="emphasize">one of the major centers for global film.</span><b> "</b></p>
+					<p class="boss"><b class="wang">Wang Jianlin</b><br />Chairman of the Wanda Group</p>
 				</div>
 			</div>
 		</section>
-		<section class="page" id="page-3">
-			<div class="golden-line pad">
-				<img src="assets/images/goldline_1.png"/>
-			</div>
+        
+        <section class="page" id="page-3">
 			<div class="promise pad">
-				<div class="row">
-					<div class="responsive-half picture">
-					<img src="assets/images/2-studio-sketch.png"/>
-				</div>
-				<div class="responsive-half text">
-					<div class="content">
-						<p><img src="assets/images/promise.png"/><span class="sr_only">The Wanda Promise</span></p>
-						<p>Wanda Studios Qingdao, the centerpiece of the Qingdao Oriental Movie Metropolis, is a US $10 billion commercial property investment by its parent company, the Wanda Group.</p>
-						<p>Spread across 165.41 hectares, this large-scale production base features a substantial number of state-of-the-art sound stages, built to the highest international technical standards. A large backlot will house built-to-order shooting locations with infinite capacity to customize to production needs.</p>
-					</div>
-				</div>
-				<div class="clearfix"></div>
-				</div>
-				<div class="row">
-					<div class="responsive-half text">
-					<div class="content">
-						<p>Slated to open July 2017, Wanda Studios Qingdao (WSQ) will offer comprehensive creative and production services to filmmakers around the world. Together with leading partners in the global film and television production industry, WSQ is building a new hub of creativity and defining one of the world’s largest film and television production destinations.</p>
-					</div>
-				</div>
-				<div class="responsive-half picture">
-					<img src="assets/images/2-studio-overview.png"/>
-				</div>
-				<div class="clearfix"></div>
-				</div>
+				<div class="tit">
+                	<img src="assets/images/the-wanda-promise.png" alt=""/>
+                </div>
+                <div class="content">
+                	<img src="assets/images/2-studio-wsq.png" class="wsq" alt=""/>
+                	<img src="assets/images/2-studio-overview.png" class="overview" alt=""/>
+                    <img src="assets/images/2-studio-sketch.png" class="sketch" alt=""/>
+                    <div class="sections">
+                    	<p><span class="bold">Wanda Studios Qingdao</span>, the centerpiece of the <span class="bold">Qingdao Oriental Movie Metropolis</span>, is a US $10 billion commercial property investment by its parent company, the Wanda Group.</p>
+                        <p>Spread across 165.41 hectares, this large-scale production base features a substantial number of state-of-the-art sound stages, built to the highest international technical standards. A large backlot will house built-to-order shooting locations with infinite capacity to customize to production needs.</p>
+                        <p>Slated to open July 2017, Wanda Studios Qingdao (WSQ) will offer comprehensive creative and production services to filmmakers around the world. Together with leading partners in the global film and television production industry, WSQ is building a new hub of creativity and defining one of the world’s largest film and television production destinations.</p>
+                    </div>
+                </div>
+				
 			</div>
 			<div class="promiseatmobile mobile">
 				<div class="logo_promise">
@@ -119,37 +109,114 @@
 				</div>
 				<div class="slider-wrapper">
 					<a href="javascript:;" class="goleft"><i class="fa fa-angle-left"></i></a>
-					<div class="slider-pic">
-						<img src="assets/images/2-studio-sketch-optimized.png" />
-					</div>
+                 <!--   <div class="box">-->
+                        <div class="slider-pic">
+                            <img src="assets/images/2-studio-overview.png"/>
+                        </div>
+                       <!-- <div class="slider-pic">
+                            <img src="assets/images/2-studio-overview.png" class="imgli"/>
+                        </div>
+                        <div class="slider-pic">
+                            <img src="assets/images/2-studio-overview.png" class="imgli"/>
+                        </div>-->
+                    <!--</div>-->
 					<a href="javascript:;" class="goright"><i class="fa fa-angle-right"></i></a>
 				</div>
 				<div class="promisetext">
-					<p><b>Wanda Studios Qingdao</b>, the centerpiece of the <b>Qingdao Oriental Movie Metropolis</b>, is a US $10 billion commercial property investment by its parent company, the Wanda Group.</p>
+					<p><span class="bold">Wanda Studios Qingdao</span>, the centerpiece of the <span class="bold">Qingdao Oriental Movie Metropolis</span>, is a US $10 billion commercial property investment by its parent company, the Wanda Group.</p>
 					<p>Spread across 165.41 hectares, this large-scale production base features a substantial number of state-of-the-art sound stages, built to the highest international technical standards. A large backlot will house built-to-order shooting locations with infinite capacity to customize to production needs.</p>
 					<p>Slated to open July 2017, Wanda Studios Qingdao (WSQ) will offer comprehensive creative and production services to filmmakers around the world. Together with leading partners in the global film and television production industry, WSQ is building a new hub of creativity and defining one of the world’s largest film and television production destinations.</p>
 				</div>
 			</div>
 		</section>
+        
 		<section class="page" id="page-4">
-			<div class="golden-line pad">
+			<!--<div class="golden-line pad">
 				<img src="assets/images/goldline_2.png"/>
-			</div>
-			<div class="container">
-				<div class="video-container">
+			</div>-->
+			<div class="timeline">
+				<div class="video-container responsive-half">
 					<!--youtube or youku-->
+                    <img src="assets/images/video.png" class="loadimg" alt="" title=""/>
 				</div>
+                <div class="responsive-half">
+                <ul class="tmtimeline">
+                	<li>
+                    	<div class="tmicon">
+                        </div>
+                        <div class="tmbdline"></div>
+                    	<time class="tmtime" datatime="EARLY 2013">
+                        	<span>EARLY 2013</span>
+                            <span class="mrt47">Inception of Wanda Studios Qingdao (WSQ)</span>
+                        </time>
+                	</li>
+                    <li>
+                    	<div class="tmicon tmicon2">
+                        </div>
+                        <div class="tmbdline tmbdline2"></div>
+                    	<time class="tmtime tmtime2" datatime="EARLY JUL">
+                        	<span>2013</span>
+                            <span>JUL</span>
+                            <span>Raleigh Studios becomes Official WSQ Consultant</span>
+                        </time>
+                	</li>
+                    
+                    <li>
+                    	<div class="tmicon3p2 tmicon">
+                        	<div class="tmicon3p">
+                                <div class="tmicon3">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tmbdline tmbdline3"></div>
+                    	<time class="tmtime tmtime3" datatime="2014 MAR">
+                        	<span>2014</span>
+                            <span>MAR</span>
+                            <span> WSQ Signs Partnership Agreement with Pinewood Studios</span>
+                        </time>
+                	</li>
+                  <li>
+                    	<div class="tmicon tmicon4">
+                        </div>
+                        <div class="tmbdline tmbdline4"></div>
+                    	<time class="tmtime tmtime4" datatime="2015 JAN">
+                        	<span>2015</span>
+                            <span>JAN</span>
+                            <span>WSQ Construction Begins</span>
+                        </time>
+                	</li>
+                    <li>
+                    	<!--<div class="tmicon5p2 ">
+                        	<div class="tmicon5p">-->
+                                <div class="tmicon5 tmicon">
+                                </div>
+                          <!--  </div>
+                        </div>-->
+                        <div class="tmbdline tmbdline5"></div>
+                    	<time class="tmtime tmtime5" datatime="2016 APR">
+                        	<span>2016</span>
+                            <span>APR</span>
+                            <span>WSQ Announces Major Hollywood Co-Production Deal</span>
+                        </time>
+                	</li>
+                <li>
+                    	<div class="tmicon tmicon6">
+                        </div>
+                        <div class="tmbdline tmbdline6"></div>
+                    	<time class="tmtime tmtime6" datatime="2017 JUL">
+                        	<span>2017</span>
+                            <span>JUL</span>
+                            <span>Soft Opening of Wanda Studios Qingda</span>
+                        </time>
+                	</li>
+                    
+                </ul>
+                </div>
 				
 			</div>
 		</section>
-		<section class="page" id="page-5">
-			<div class="yacht pad">
-				<img src="assets/images/yacht.gif"/>
-			</div>
-			<div class="map-city pad">
-				<span><img src="assets/images/4-gps.png"/></span>
-				<span class="title">Qingdao</span>
-			</div>
+		<section class="page" id="page-5" style="overflow:hidden;">
+			
 			<div class="floating pad">
 				<span><img src="assets/images/floating_island_bg.png"/></span>
 				<span><img src="assets/images/floating_island.png"/></span>
@@ -160,10 +227,228 @@
 						<p>Experience Zone</p>
 						<span class="verticalline"></span>
 					</div>
+                    <div class="film zone">
+						<p>Film Set Zone</p>
+						<span class="verticalline"></span>
+					</div>
+                    <div class="production zone">
+						<p>Production Zone</p>
+						<span class="verticalline"></span>
+					</div>
+                 <div class="research zone">
+                 		<span class="verticalline" style="margin-left:190px; height:60px;"></span>
+						<p style="text-align:right;">Research & Development Center<br/>Services Center<br/>Comprehensive Building<br/>Master Studio</p>
+					</div>
 				</span>
 			</div>
+            <div class="contents content pad">
+            	<div id="article">
+            	<h2 class="title">Qingdao</h2>
+                <p>This city of rich history, both diverse and lively, graces the skyline with modern high-rises, and presents the world with a new addition: Wanda Studios Qingdao (WSQ). WSQ is an international studio, boasting a garden-like complex, complete with scenic destinations of mountains, rivers, reservoirs and wetlands.</p>
+                <p>Equidistantly nestled between Beijing and Shanghai, WSQ is found in the Huangdao district of Qingdao city. It is intimately connected to Hollywood: a high-performance, secure optical fiber studio backbone network links all production and postproduction facilities across the Pacific at an impressive rate of up to 40G.</p>
+                </div>
+            </div>
+            <div class="ship">
+                <div class="ship1">
+                     <img src="assets/images/ship1_1.png"/>
+                </div>
+            </div>
 		</section>
+        <section class="page" id="page-6">
+        	<div class="facilities pad">
+            	<div class="tit">
+                	Our World-Class Facilities
+                </div>
+                <div class="facimg">
+                	<img src="assets/images/6img.jpg" class="center img6" />
+                    <img src="assets/images/6.jpg" class="i6" />
+                    <div class="whitebd img10">
+                    	<img src="assets/images/10img.jpg" class=""/>
+                        <span class="lt"></span>
+                        <span class="lb"></span>
+                        <span class="rt"></span>
+                        <span class="rb"></span>
+                    </div>
+                    <img src="assets/images/10.jpg" class="i10" />
+                    <img src="assets/images/2img.jpg" class="img2" />
+                    <img src="assets/images/1img.jpg" class="img1" />
+                    <img src="assets/images/1.jpg" class="i1" />
+                    <img src="assets/images/2.jpg" class="i2" />
+                    <img src="assets/images/4img.jpg" class="img4" />
+                    <img src="assets/images/9.jpg" class="i9" />
+                    <img src="assets/images/3img.jpg" class="img3" />
+                    <img src="assets/images/4.jpg" class="i4"/>
+                   <div class="whitebd img5">
+                    	<img src="assets/images/5img.jpg" class="" />
+                    	<span class="lt"></span>
+                        <span class="lb"></span>
+                        <span class="rt"></span>
+                        <span class="rb"></span>
+                    </div>
+                     <img src="assets/images/9img.jpg" class="img9" />
+                    <img src="assets/images/3.jpg" class="i3"/>
+                     <img src="assets/images/8.jpg" class="i8" />
+                      <img src="assets/images/5.jpg" class="i5" />
+                      <img src="assets/images/7img.jpg" class="img7" />
+                       <img src="assets/images/7.jpg" class="i7" />
+                </div>
+            </div>
+        
+        </section>
+         <section class="page" id="page-7">
+        	<div class="facilities pad">
+            	<div id="wordcloud">
+                  <span class="wordcontainer" id="word01"><span class="word">Well-designed Production Offices</span></span>
+                  <span class="wordcontainer" id="word02"><span class="word">Interpretation<br>Services</span></span>
+                  <span class="wordcontainer" id="word03"><span class="word">Sign & Graphics<br>Shop</span></span>
+                  <span class="wordcontainer" id="word04"><span class="word">Underwater<br>Cinematography</span></span>
+                  <span class="wordcontainer" id="word05"><span class="word">Transportation</span></span>
+                  <span class="wordcontainer" id="word06"><span class="word">Construction</span></span>
+                  <span class="wordcontainer" id="word07"><span class="word">VFX, Animation,<br>Digital Effects</span></span>
+                  <span class="wordcontainer" id="word08"><span class="word">Sound Mixing</span></span>
+                  <span class="wordcontainer" id="word09"><span class="word">Post Production</span></span>
+                  <span class="wordcontainer" id="word10"><span class="word">Editing</span></span>
+                  <span class="wordcontainer" id="word11"><span class="word">Set Lighting,<br>Electrical & Grip</span></span>
+                  <span class="wordcontainer" id="word12"><span class="word">Graphic Design / Web Design</span></span>
+                  <span class="wordcontainer" id="word13"><span class="word">Props Making</span></span>
+                  <span class="wordcontainer" id="word14"><span class="word">Textile Supply</span></span>
+                  <span class="wordcontainer" id="word15"><span class="word">Turn-key Catering Preparation Areas</span></span>
+                  <span class="wordcontainer" id="word16"><span class="word">Film Production Management</span></span>
+                  <span class="wordcontainer" id="word17"><span class="word">Marketing Solutions</span></span>
+                  <span class="wordcontainer" id="word18"><span class="word">Production Equipment Rental</span></span>
+                  <span class="wordcontainer" id="word19"><span class="word">Costume Design</span></span>
+                  <span class="wordcontainer" id="word20"><span class="word">Set Construction and<br>Material Supply</span></span>
+                  <span class="wordcontainer" id="word21"><span class="word">Security<br>Services</span></span>
+                  <span class="wordcontainer" id="word22"><span class="word">Set Design</span></span>
+                  <span class="wordcontainer" id="word23"><span class="word">Expendables</span></span>
+                  <span class="wordcontainer" id="word24"><span class="word">IT & System Administration</span></span>
+                  <span class="wordcontainer" id="word25"><span class="word">Public and Corporate<br>Relations</span></span>
+                  <span class="wordcontainer" id="word26"><span class="word">Film Trailer Production Service</span></span>
+                  <span class="wordcontainer" id="word27"><span class="word">Motion Capture</span></span>
+                  <span class="wordcontainer" id="word28"><span class="word">Video Game<br>Development</span></span>
+                  <span class="wordcontainer" id="word29"><span class="word">Legal Counsel</span></span>
+                  <span class="wordcontainer" id="word30"><span class="word">Paint<br>Shop</span></span>
+                  <span class="wordcontainer" id="word31"><span class="word">Motion Control</span></span>
+                  <span class="wordcontainer" id="word32"><span class="word">Hair & Makeup<br>Service</span></span>
+                  <span class="wordcontainer" id="word33"><span class="word">Digital Connectivity<br>Service</span></span>
+                  <span class="wordcontainer" id="word34"><span class="word">Sound Recording, Foley</span></span>
+                </div>
+            </div>
+        
+        </section>
+        
+        <section class="page section7 pad" id="page-8">
+        	<div class="formwrap">
+			<div class="formrgh">
+			<h3>Get in Touch</h3>
+			<p>Wanda Studios Qingdao stands as the world’s largest film and television studio, promising state-of-the-art facilities and world-class production services – creating excitement for all filmmakers, directors and movie enthusiasts. If you would like to learn more about Wanda Studios Qingdao, please leave us a note and we will get back to you as soon as we can. We look forward to hearing from you.</p>
+				<form class="col s12">
+					<div class="row">
+						<div class="input-field col s6">
+							<input id="username" type="text" class="validate">
+							<label for="username">Name<i class="fa fa-asterisk"></i></label>
+						</div>
+						<div class="input-field col s6">
+							<input id="email" type="email" class="validate">
+							<label for="email" data-error="wrong" data-success="right">Email<i class="fa fa-asterisk"></i></label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="input-field col s12">
+							<input id="companyname" type="text" class="validate">
+							<label for="companyname">Company Name</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="input-field col s12">
+							<input id="subject" type="text" class="validate">
+							<label for="subject">Subject</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="input-field col s12">
+							<textarea id="textarea1" class="materialize-textarea" type="text"></textarea>
+							<label for="textarea1">Message<i class="fa fa-asterisk"></i></label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="inputwrapper col s12">
+							<input type="submit" name="submit" id="submit" class="send-btn" value="submit">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col s12">
+							<p>You may also connect with a representative at:<br/><a class="mailcolor" href="&#109;&#x61;&#x69;&#108;&#116;&#x6f;&#x3a;&#x69;&#110;&#102;&#x6f;&#64;&#x77;&#x61;&#110;&#x64;&#97;&#115;&#116;&#117;&#x64;&#x69;&#111;&#x73;&#46;&#x63;&#x6f;&#x6d;">&#x69;&#110;&#102;&#x6f;&#64;&#x77;&#x61;&#110;&#x64;&#97;&#115;&#116;&#117;&#x64;&#x69;&#111;&#x73;&#46;&#x63;&#x6f;&#x6d;</a> </p>
+						</div>
+					</div>
+				</form>
+			</div>
+			</div>
+            
+            <div class="mobilesec7">
+		<div class="moformwrap">
+				<h3>Get in Touch</h3>
+				<p>Wanda Studios Qingdao stands as the world’s largest film and television studio, promising state-of-the-art facilities and world-class production services – creating excitement for all filmmakers, directors and movie enthusiasts. If you would like to learn more about Wanda Studios Qingdao, please leave us a note and we will get back to you as soon as we can. We look forward to hearing from you.</p>
+			<form name="" class="list nobottommargin" id="">
+				<div class="col_full">
+					<label>Name <small>*</small></label><input type="text" maxlength="50" name="username" id="username" class="sm-form-control required">
+				</div>
+
+				<div class="col_full">
+					<label>Email <small>*</small></label>
+					<input type="text" maxlength="50" name="email" id="email" class="sm-form-control required">
+				</div>
+				<div class="col_full">
+					<label>Subject</label>
+					<input type="text" maxlength="100" name="company" id="company" class="sm-form-control required">
+				</div>
+				<div class="clear"></div>
+
+				<div class="col_full">
+					<label>Message <small>*</small></label>
+					<input type="text" id="interest" name="interest" rows="2" cols="30" class="sm-form-control required">
+				</div>
+
+				<div class="col_full">
+					<div class="btn btn-info mt-xs mb-xs submit">submit</div>
+				</div>
+			</form>
+		</div>
 	</div>
+        </section>
+        
+	</div>
+    
+
+    <footer>
+	<div class="container tablet desk pad">
+    	<p class="footer-address">
+        	<i class="fa fa-map-marker"></i>44/F HNA IMC Center, No.2 HongKong Road , Shinan District, 266000 Qingdao, Shandong, CHINA
+        </p>
+        <div class="deco"></div>
+        <div class="copyright">Copyright &copy; 2016 Wanda Studios Qingdao.  All Rights Reserved.</div>
+        <div class="footer-widgets clearfix">
+        	<a href="http://www.wanda-group.com/" target="_blank" class="link">WANDA GROUP&nbsp;&nbsp;<i class="fa fa-external-link"></i></a>
+            <a href="http://www.wandamedia.cn/en/" target="_blank" class="link">WANDA MEDIA&nbsp;&nbsp;<i class="fa fa-external-link"></i></a>
+            <a href="http://www.wandacinemas.com/en/" target="_blank">WANDA CINEMAS&nbsp;&nbsp;<i class="fa fa-external-link"></i></a>
+        </div>
+    </div>
+    <div class="mobile">
+    	<div class="footwrap">
+            <div class="footer-widgets clearfix">
+                <a href="http://www.wanda-group.com/" target="_blank" class="link">WANDA GROUP&nbsp;&nbsp;<i class="fa fa-external-link"></i></a>
+                <a href="http://www.wandamedia.cn/en/" target="_blank" class="link link2">WANDA MEDIA&nbsp;&nbsp;<i class="fa fa-external-link"></i></a>
+                <a href="http://www.wandacinemas.com/en/" target="_blank" class="link last">WANDA CINEMAS&nbsp;&nbsp;<i class="fa fa-external-link"></i></a>
+            </div>
+            <div class="deco"></div>
+            
+            <p class="footer-address clearfix">
+        		<i class="fa fa-map-marker"></i>44/F HNA IMC Center, No.2 HongKong Road , Shinan District, 266000 Qingdao, Shandong, CHINA
+        	</p>
+            <div class="copyright">Copyright &copy; 2016 Wanda Studios Qingdao.  All Rights Reserved.</div>
+        </div>
+    </div>
+</footer>
 	<div id="scroll_nav" class="tablet">
 		<ul>
 			<li><a href="#" class="active"><span class="sr_only">Home</span></a></li>
@@ -178,8 +463,8 @@
 </div>
 <div class="preloading">
 	<div class="loading_text">
-		<p class="logo"><img src="assets/images/logo.png"/></p>
-		<h3>LOADING RESOURCES</h3>
+		<!--<p class="logo"><img src="assets/images/logo.png"/></p>
+		<h3>LOADING RESOURCES</h3>-->
 		<p><img src="assets/images/loading.gif"/></p>
 	</div>
 </div>
@@ -190,8 +475,18 @@
 if(typeof jQuery == 'undefined')
 	document.write('<script src="assets/scripts/jquery.min.js"><\/script><script src="assets/scripts/fastclick.min.js"><\/script>')
 </script>
+ <script src="assets/scripts/jquery.easing.min.js"></script>
+<script src="assets/scripts/materialize.min.js"></script>
 <script src="assets/scripts/prefix.js" type="text/javascript"></script>
 <script src="assets/scripts/framework.js" type="text/javascript"></script>
+<script src="assets/scripts/jquery.nicescroll.js"></script>
+<script>
+	$(function(){
+		$('html').niceScroll({cursorborder:"0px"});
+	});
+	
+</script>
+
 
 </body>
 </html>
