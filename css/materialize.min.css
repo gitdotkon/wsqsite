@@ -1628,9 +1628,6 @@ html {
 	-ms-text-size-adjust:100%;
 	-webkit-text-size-adjust:100%
 }
-body {
-	margin:0
-}
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
 	display:block
 }
@@ -6646,7 +6643,7 @@ input[type=text], input[type=password], input[type=email], input[type=url], inpu
 	height:3rem;
 	width:100%;
 	font-size:1rem;
-	margin:0 0 15px 0;
+	margin:0 0 0 0;
 	padding:0;
 	box-shadow:none;
 	-webkit-box-sizing:content-box;
