@@ -6700,7 +6700,7 @@ input[type=text]+label:after, input[type=password]+label:after, input[type=email
 	position:absolute;
 	top:0.8rem;
 	left:0.75rem;
-	font-size:1rem;
+	/*font-size:1rem;*/
 	cursor:text;
 	-webkit-transition:.2s ease-out;
 	-moz-transition:.2s ease-out;

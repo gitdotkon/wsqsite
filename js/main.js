@@ -100,8 +100,9 @@
 		$('a:not([class="external"])').click(function(event){
 			var section = $(this).data('nav-section'),
 				navbar = $('#navbar');
+				var htop=$('[data-section="' + section + '"]').offset().top-30;
 		    $('html, body').animate({
-		        scrollTop: $('[data-section="' + section + '"]').offset().top
+		        scrollTop: htop
 		    }, 500);
 
 		    if ( navbar.is(':visible')) {

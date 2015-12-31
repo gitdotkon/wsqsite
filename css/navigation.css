@@ -225,7 +225,9 @@ nav .container{width:100%!important; padding:0!important; margin:0!important;}
 .rightnav li a{display: block; width: 12px; height: 12px; border-radius: 6px; background-color: #d7d7d7; padding:0!important;}
 .rightnav li.active a{background-color: #e60000!important;padding:0!important;}
 
-
+@media screen and (max-width: 980px) {
+	.rightnav li a[data-nav-section='about']{ display:none; }
+}
 
 
 
