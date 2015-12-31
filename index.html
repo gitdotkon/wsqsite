@@ -92,6 +92,14 @@ if(typeof jQuery == 'undefined')
                 }
             }, "jsonp");
         </script>
+        
+      <!--  <script type="text/javascript" src="http://player.youku.com/jsapi">
+			player = new YKU.Player('intro-video-china',{
+			styleid: '0',
+			client_id: 'de97d57c91a4de7d',
+			vid: 'XMTQyMzUxMjkwMA=='
+			});
+		</script>-->
 
 <!-- Boat Animation-->
 
@@ -133,13 +141,7 @@ $(window).scroll(function(){
     }
 });
 </script>
-<script type="text/javascript" src="http://player.youku.com/jsapi">
-player = new YKU.Player('intro-video-china',{
-styleid: '0',
-client_id: 'de97d57c91a4de7d',
-vid: 'XMTQyMzUxMjkwMA=='
-});
-</script>
+
 </head>
 <body>
 
@@ -242,8 +244,14 @@ vid: 'XMTQyMzUxMjkwMA=='
         <div id="intro-video" style="display: none;">
           <iframe src="https://www.youtube.com/embed/C4HFPXibFfc" frameborder="0" allowfullscreen></iframe>
         </div>
+        
+        <!--<div id="intro-video-china" style="display: none;">
+          <iframe src="http://player.youku.com/embed/XMTQyMzUxMjkwMA==" frameborder=0 allowfullscreen></iframe>
+          
+        </div>-->
+        
         <div id="intro-video-china" style="display: none;">
-          <!--<iframe src="http://player.youku.com/embed/XMTQyMzUxMjkwMA==" frameborder=0 allowfullscreen></iframe>-->
+          <iframe src="http://player.youku.com/embed/XMTQyMzUxMjkwMA==" frameborder=0 allowfullscreen></iframe>
           
         </div>
       </div>
