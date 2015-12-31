@@ -14,8 +14,8 @@
     $email_from = $email;
     $email_to = 'info@wandastudios.com';//replace with your email
 	
-	$body =  '<p>Hi Admin</p>';
-	$body .= '<p>You have an enquiry from wandastudios.com. Please find customer\'s enquiry details below:--</p>';	
+	$body =  '<p>Hi there</p>';
+	$body .= '<p>Enquiry submitted from wandastudios.com. Please find enquiry details below:</p>';	
     $body .= '<b>Name: </b>' . $name . "<p></p>"  
 			. '<b>Email: </b>' . $email . "<p></p>" 
 			. '<b>Subject: </b>' . $subject . "<p></p>" 
