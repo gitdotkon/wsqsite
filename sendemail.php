@@ -28,14 +28,15 @@
 
 	// To send HTML mail, the Content-type header must be set
 	$headers  = 'MIME-Version: 1.0' . "\r\n";
-	$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+	$headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
 	
 	// Additional headers
 	$headers .= 'To: WSQ <info@questql.com>' . "\r\n";
 	$headers .= 'From: '.$name.' <'.$email.'>' . "\r\n";
 	//$headers .= 'Cc: birthdayarchive@example.com' . "\r\n";
-	$headers .= 'BCc: 172117873@qq.com' . "\r\n";
+	//$headers .= 'BCc:  '.$name.' <'.$email.'>' . "\r\n";
 	
+   
 	// Mail it
 	mail($email_to, $subject, $body, $headers);
 
