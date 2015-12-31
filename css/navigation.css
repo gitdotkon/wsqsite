@@ -38,13 +38,15 @@ nav {
 .smallheader{height: 75px!important;}
 @media (max-width:1024px){
 	.navbar-nav{ text-align:left; padding-left:138px;}
+	
 	.navbar-nav a{padding:36px 4px;}
+	.smallheader .navbar-nav a{padding:28px 4px}
 }
 @media only screen and (min-width: 768px) {
 
 .smallheader .navbar-nav a {
     line-height: 60px;
-    padding: 28px 8px;
+    padding: 28px 4px;
 }
 
 }

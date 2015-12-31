@@ -83,6 +83,9 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 
 .desk,.tablet,.pad,.mobile{display: none;}
 
+@media (max-width:1023px){
+  .ipad1{display: none!important;}
+}
 @media only screen and (max-width: 767px) {
   .mobile{display: block;}
 }
@@ -299,6 +302,18 @@ body {
     position: relative;
     width: 1000px;
     margin: 0 auto 0 auto;}
+@media only screen and (max-width: 1024px) {
+
+#second .frame_inside {
+    min-height: 800px; 
+}
+#second .pic-1{left:30px;}
+#second .pic-2{left:24%;}
+#second .pic-3{left:57%;}
+#second .pic-4{left:37%;}
+
+
+}
 @media only screen and (max-width: 767px) {
 #second {background-image:url(../images/bg-2-mobile.jpg);}
 /*#second{padding-top:15%;}*/
@@ -314,15 +329,7 @@ body {
 
 
 }
-@media only screen and (max-width: 1024px) {
 
-#second .frame_inside {
-    min-height: 800px; 
-}
-
-
-
-}
 
 /********************************************/
 /* Our Timeline */
@@ -402,7 +409,7 @@ body {
 	100%{ transform:scale(1.5); }
 }
 
-#third .mobile-record{ max-width:640px; width:100%; margin:0 auto; padding-bottom:30px; }
+#third .mobile-record{ max-width:640px; width:100%; margin:0 auto; padding-bottom:40px; }
 #third .mobile-record li{ background:url(../images/list-icon.jpg) no-repeat left 8px; padding-left:25px; }
 #third .mobile-record li h5{ color:#ed1c24; font-size:24px; font-weight:bold; }
 #third .mobile-record li p{ line-height:normal; color:#333333; font-size:26px; }
@@ -432,7 +439,7 @@ body {
 	#intro-video-china{ height:348px; width:70%; position:absolute; top:75px; right:30px;}
 }
 @media (min-width:992px) and (max-width:1114px) {
-	#intro-video-china{ height:348px; width:70%; position:absolute; top:75px; right:65px;}
+	#intro-video-china{ height:300px; width:70%; position:absolute; top:46px; right:78px;}
 	#third .time-line{margin-left:-75px;}
 }
 @media screen and (max-width:1024px){	
