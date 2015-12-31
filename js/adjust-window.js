@@ -38,9 +38,9 @@ $(document).ready(function(){
 			facilityP = (tenH - facilityH)/2;
 		$('.fifthsec').css({'padding-top':facilityP});
 		
-		var studioH = $('.wanda-desc').height(),
+		/*var studioH = $('.wanda-desc').height(),
 			studioP = (tenH - studioH)/2;
-		$('.wanda-desc').css({'padding-top':studioP});
+		$('.wanda-desc').css({'padding-top':studioP});*/
 	}
 	
 	
