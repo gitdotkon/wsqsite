@@ -47,7 +47,6 @@ nav {
 	.smallheader .navbar-nav a{padding:28px 4px}
 }
 @media only screen and (min-width: 768px) {
-
 .smallheader .navbar-nav a {
     line-height: 60px;
     padding: 28px 4px;
@@ -56,6 +55,7 @@ nav {
 }
 
 @media only screen and (max-width: 767px) {
+
 nav{margin-top:92px;}
 .smallheader nav{margin-top:72px;}
 nav ul li {
@@ -81,7 +81,7 @@ nav ul li {
     padding: 0!important;
 }
 .navbar-nav {
-    margin: 0!important;
+    margin: 0!important;text-align:center; padding-left:0;
 }
 .navbar-toggle {
     margin-right: 30px;
