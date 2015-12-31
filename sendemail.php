@@ -12,7 +12,7 @@
     $message = @trim(stripslashes($_POST['message'])); 
    
     $email_from = $email;
-    $email_to = 'info@questql.com,$email_from';//replace with your email
+    $email_to = 'info@questql.com';//replace with your email
 	
 	$body =  '<p>Hi Admin -</p>';
 	$body .= '<p>You have an enquiry. Please find customer\'s enquiry details below:--</p>';	
@@ -34,7 +34,7 @@
 	$headers .= 'To: WSQ <info@questql.com>' . "\r\n";
 	$headers .= 'From: '.$name.' <'.$email.'>' . "\r\n";
 	//$headers .= 'Cc: birthdayarchive@example.com' . "\r\n";
-	//$headers .= 'BCc:  '.$name.' <'.$email.'>' . "\r\n";
+	$headers .= 'BCc:  '.$name.' <'.$email.'>' . "\r\n";
 	
    
 	// Mail it
