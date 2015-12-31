@@ -36,7 +36,11 @@ nav {
 }
 .smallheader .navbar-brand img{width:100%;}
 .smallheader{height: 75px!important;}
-@media (max-width:1024px){
+
+
+
+
+@media (max-width:1080px){
 	.navbar-nav{ text-align:left; padding-left:138px;}
 	
 	.navbar-nav a{padding:36px 4px;}
