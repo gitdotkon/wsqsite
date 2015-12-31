@@ -46,6 +46,14 @@ nav {
 	.navbar-nav a{padding:36px 4px;}
 	.smallheader .navbar-nav a{padding:28px 4px}
 }
+
+@media  (min-width: 1200px) {
+.smallheader .navbar-nav a {
+    line-height: 60px;
+    padding: 28px 8px;
+}
+
+}
 @media only screen and (min-width: 768px) {
 .smallheader .navbar-nav a {
     line-height: 60px;
@@ -202,6 +210,17 @@ nav .container{width:100%!important; padding:0!important; margin:0!important;}
   }
   
   .navbar-nav a {
+    line-height: 42px;
+    padding: 0 15px;
+    width: 100%;
+    display: block;
+    clear: both;
+    background: #fff;
+    color: #333;
+    text-align: left;
+    border-bottom: 1px solid #f1f1f1;
+}
+.smallheader  .navbar-nav a {
     line-height: 42px;
     padding: 0 15px;
     width: 100%;

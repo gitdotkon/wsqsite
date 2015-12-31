@@ -86,6 +86,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 @media (max-width:1023px){
   .ipad1{display: none!important;}
 }
+
 @media only screen and (max-width: 767px) {
   .mobile{display: block;}
 }
@@ -210,6 +211,7 @@ body {
 	#first .countdown { position: inherit; height: 68px; width: 296px; margin:0 auto; }
 	#first video{ width:auto; }	
 	#first .countdown .days { float: left; margin-top: 9px;	width:30px!important; }
+	#first .videobg{background-image:none;}
 }
 /*@media only screen and (min-width: 768px),(max-width: 1023px) {
 	#first {background:url(../images/bg-1-mobile-combine.jpg) 0 -395px no-repeat scroll; position:relative; height:600px; background-size: cover; }
