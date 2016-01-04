@@ -24,8 +24,8 @@
 <meta name="twitter:url" content="" />
 <meta name="twitter:card" content="" />
 
-<!-- jQuery --> 
-<script src="js/jquery.min.js"></script> 
+<!-- jQuery -->
+<script src="js/jquery.min.js"></script>
 <script src="js/jpreloader.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function() {
@@ -36,11 +36,19 @@
 		});
     });
 </script>
+<!--Remove Video On Load-->
+<script>
+$(function(){
+	 if ($(window).width() < 1024) {
+   $(".videobg").remove();
+}
+	});
+	
+	
+</script>
 <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 <link rel="shortcut icon" href="favicon.ico">
 
-<!-- Animate.css -->
-<link rel="stylesheet" href="css/animate.css">
 <!-- Icomoon Icon Fonts-->
 <link rel="stylesheet" href="css/icomoon.css">
 <!-- Simple Line Icons -->
@@ -51,7 +59,6 @@
 <!-- Bootstrap  -->
 <link rel="stylesheet" href="css/bootstrap.css">
 <link rel="stylesheet" href="css/navigation.css">
-
 
 <!-- Modernizr JS -->
 <script src="js/modernizr-2.6.2.min.js"></script>
@@ -109,7 +116,6 @@ onload = function startAnimation() {
 })
 </script>
 
-
 <!-- On Scroll Go Top Show-->
 <script>
 $(document).scroll(function() {
@@ -131,13 +137,6 @@ $(window).scroll(function(){
     } else {
         $('#fh5co-header').removeClass('smallheader');
     }
-});
-</script>
-<script type="text/javascript" src="http://player.youku.com/jsapi">
-player = new YKU.Player('intro-video-china',{
-styleid: '0',
-client_id: 'de97d57c91a4de7d',
-vid: 'XMTQyMzUxMjkwMA=='
 });
 </script>
 </head>
@@ -184,7 +183,7 @@ vid: 'XMTQyMzUxMjkwMA=='
 
 <!-- BlockQuotes -->
 <div id="blockquotes" class="relative" data-section="blockquotes">
-  <div class="projectinfo wow fadeInUp animated">
+  <div class="projectinfo wow fadeInUp animated_new">
     <div class="infomation"> <span class="left-quotation"><img src="images/quote-left.png"></span> <span class="right-quotation"><img src="images/quote-right.png"></span>
       <p class="infotext"><b>" </b>Qingdao Oriental Movie Metropolis will be the most advanced movie studio with the largest investment in the world. Wanda has invited the world's leading companies and talent to develop this project. I believe that with its opening…<br>
         it will become <span class="emphasize">one of the major centers for global film.</span><b> "</b></p>
@@ -199,7 +198,7 @@ vid: 'XMTQyMzUxMjkwMA=='
   <div class="container desk tablet fifthheight">
     <div class="frame_inside relative">
       <p class="text-center"><img src="images/1-tagline.png" alt="The Wanda Promise" title="The Wanda Promise" /></p>
-      <div class="desk tablet pad"><img class="pic-1 wow fadeInUp animated" src="images/2-studio-overview.png" alt="Panorama of Movie Studio" title="Panorama of Movie Studio" /> <img class="pic-3 wow fadeInUp animated" src="images/2-studio-wsq.png" alt="Logo of Oriental Movie Metropolis" title="Logo of Oriental Movie Metropolis" /> <img class="pic-2 wow fadeInUp animated" src="images/2-studio-sketch.png" alt="Front Gate" title="Front Gate" /></div>
+      <div class="desk tablet pad"><img class="pic-1 wow fadeInUp animated_new" src="images/2-studio-overview.png" alt="Panorama of Movie Studio" title="Panorama of Movie Studio" /> <img class="pic-3 wow fadeInUp animated_new" src="images/2-studio-wsq.png" alt="Logo of Oriental Movie Metropolis" title="Logo of Oriental Movie Metropolis" /> <img class="pic-2 wow fadeInUp animated_new" src="images/2-studio-sketch.png" alt="Front Gate" title="Front Gate" /></div>
       <div class="pic-4 col-xs-12 col-sm-7 col-md-7">
         <p><strong>Wanda Studios Qingdao</strong>, the centerpiece of the <strong>Qingdao Oriental Movie Metropolis</strong>, is a US $10 billion commercial property investment by its parent company, the Wanda Group.</p>
         <p>Spread across 165.41 hectares, this large-scale production base features a substantial number of state-of-the-art sound stages, built to the highest international technical standards. A large backlot will house built-to-order shooting locations with infinite capacity to customize to production needs.</p>
@@ -230,100 +229,98 @@ vid: 'XMTQyMzUxMjkwMA=='
 
 <!-- Our Timeline -->
 <div id="third" data-section="services" class="homeSlide">
-	<div class="third">
+  <div class="third"> 
     <!-- <div class="row">
-    <div class="col-xs-12 col-sm-12 col-md-12"> <h2 class="wow fadeInUp  animated text-center" style="visibility: visible; animation-name: fadeInUp;">Our Timeline</h2></div>
+    <div class="col-xs-12 col-sm-12 col-md-12"> <h2 class="wow fadeInUp  animated_new text-center" style="visibility: visible; animation-name: fadeInUp;">Our Timeline</h2></div>
    </div>-->
-  <div class="row">
- 
-      <div class="timeline-video wow fadeInUp animated">
-       <h2 class="wow fadeInUp  animated text-center" style="visibility: visible; animation-name: fadeInUp; font-size:30px; margin-top:-20px; padding-bottom:20px;">Our Timeline</h2>
-    <div class="col-xs-12 col-sm-12 col-md-6">
-        <div id="intro-video" style="display: none;">
-          <iframe src="https://www.youtube.com/embed/C4HFPXibFfc" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div id="intro-video-china" style="display: none;">
-          <!--<iframe src="http://player.youku.com/embed/XMTQyMzUxMjkwMA==" frameborder=0 allowfullscreen></iframe>-->
-          
+    <div class="row">
+      <div class="timeline-video wow fadeInUp animated_new">
+        <h2 class="wow fadeInUp  animated_new text-center" style="visibility: visible; animation-name: fadeInUp; font-size:30px; margin-top:-20px; padding-bottom:20px;">Our Timeline</h2>
+        <div class="col-xs-12 col-sm-12 col-md-6">
+         
+          <div id="intro-video-china" style="display: none;"> 
+            <iframe width="100%" height="100%" src="http://player.youku.com/embed/XMTQyMzUxMjkwMA==" frameborder=0 allowfullscreen></iframe>
+          </div>
+           <div id="intro-video" style="display: none;">
+            <iframe src="https://www.youtube.com/embed/C4HFPXibFfc" frameborder="0" allowfullscreen></iframe>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col-xs-12 col-sm-12 col-md-6">
-      <div class="time-line visible-lg visible-md hidden-sm">
-        <ul class="top-timeline wow fadeInUp animated">
+      <div class="col-xs-12 col-sm-12 col-md-6">
+        <div class="time-line visible-lg visible-md hidden-sm">
+          <ul class="top-timeline wow fadeInUp animated_new">
+            <li>
+              <h5>EARLY 2013</h5>
+              <p>Inception of Wanda Studios Qingdao (WSQ)</p>
+            </li>
+            <li>
+              <h5 >2014 <span>MAR</span></h5>
+              <p >WSQ Signs Partnership Agreement with Pinewood Studios</p>
+            </li>
+            <li>
+              <h5>2016 <span>APR</span></h5>
+              <p>WSQ Launch Event</p>
+            </li>
+          </ul>
+          <div class="horizontalline">
+            <hr>
+            <div class="circle first wow"></div>
+            <div class="circle second wow"></div>
+            <div class="circle third wow"></div>
+            <div class="circle fourth wow"></div>
+            <div class="circle fifth wow"></div>
+            <div class="circle sixth wow"></div>
+          </div>
+          <ul class="bottom-timeline wow fadeInDown animated_new">
+            <li>
+              <div class="time-record">
+                <h5>2013 <span>JUL</span></h5>
+                <p>Raleigh Studios becomes Official WSQ Consultant</p>
+              </div>
+            </li>
+            <li>
+              <div class="time-record">
+                <h5>2015 <span>JAN</span></h5>
+                <p>WSQ Construction Begins</p>
+              </div>
+            </li>
+            <li>
+              <div class="time-record">
+                <h5>2017 <span>JUL</span></h5>
+                <p>Soft Opening of Wanda Studios Qingdao</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <ul class="mobile-record hidden-md  hidden-lg wow fadeInUp animated_new">
           <li>
             <h5>EARLY 2013</h5>
             <p>Inception of Wanda Studios Qingdao (WSQ)</p>
           </li>
           <li>
-            <h5 >2014 <span>MAR</span></h5>
-            <p >WSQ Signs Partnership Agreement with Pinewood Studios</p>
+            <h5>2013 <span>JUL</span></h5>
+            <p>Raleigh Studios becomes Official WSQ Consultant</p>
           </li>
           <li>
-            <h5>2016</h5>
+            <h5>2014 <span>MAR</span></h5>
+            <p>WSQ Signs Partnership Agreement with Pinewood Studios</p>
+          </li>
+          <li>
+            <h5>2015 <span>JAN</span></h5>
+            <p>WSQ Construction Begins</p>
+          </li>
+          <li>
+            <h5>2016 <span>APR</span></h5>
             <p>WSQ Launch Event</p>
           </li>
-        </ul>
-		<div class="horizontalline">
-			<hr>
-			<div class="circle first wow"></div>
-			<div class="circle second wow"></div>
-			<div class="circle third wow"></div>
-			<div class="circle fourth wow"></div>
-			<div class="circle fifth wow"></div>
-			<div class="circle sixth wow"></div>
-		</div>
-        <ul class="bottom-timeline wow fadeInDown animated">
           <li>
-            <div class="time-record">
-              <h5>2013 <span>JUL</span></h5>
-              <p>Raleigh Studios becomes Official WSQ Consultant</p>
-            </div>
-          </li>
-          <li>
-            <div class="time-record">
-              <h5>2015 <span>JAN</span></h5>
-              <p>WSQ Construction Begins</p>
-            </div>
-          </li>
-          <li>
-            <div class="time-record">
-              <h5>2017 <span>JUL</span></h5>
-              <p>Soft Opening of Wanda Studios Qingdao</p>
-            </div>
+            <h5>2017 <span>JUL</span></h5>
+            <p>Soft Opening of Wanda Studios Qingdao</p>
           </li>
         </ul>
       </div>
-      <ul class="mobile-record hidden-md  hidden-lg wow fadeInUp animated">
-        <li>
-          <h5>EARLY 2013</h5>
-          <p>Inception of Wanda Studios Qingdao (WSQ)</p>
-        </li>
-        <li>
-          <h5>2013 <span>JUL</span></h5>
-          <p>Raleigh Studios becomes Official WSQ Consultant</p>
-        </li>
-        <li>
-          <h5>2014 <span>MAR</span></h5>
-          <p>WSQ Signs Partnership Agreement with Pinewood Studios</p>
-        </li>
-        <li>
-          <h5>2015 <span>JAN</span></h5>
-          <p>WSQ Construction Begins</p>
-        </li>
-        <li>
-          <h5>2016</h5>
-          <p>WSQ Launch Event</p>
-        </li>
-        <li>
-          <h5>2017 <span>JUL</span></h5>
-          <p>Soft Opening of Wanda Studios Qingdao</p>
-        </li>
-      </ul>
+      <div class="clearfix">&nbsp;</div>
     </div>
-<div class="clearfix">&nbsp;</div>
-
-  </div>
   </div>
 </div>
 <div class="clearfix"></div>
@@ -331,44 +328,30 @@ vid: 'XMTQyMzUxMjkwMA=='
 <!-- Where We Are -->
 <div id="fourth" data-section="features" class="homeSlide">
   <div class="container">
-  
-  <div class="wanda-desc wow hidden-xs desktop_gal fadeInUp animated pull-right">
-    <div class="wanda_layout"><img src="images/wanda-inset.jpg" alt="Layout of Wanda Studios Qingdao" title="Layout of Wanda Studios Qingdao"/></div>
-    <div class="wanda-head">Qingdao</div>
-    <p>This city of rich history, both diverse and lively, graces the skyline with modern high-rises, and presents the world with a new addition: Wanda Studios Qingdao (WSQ). WSQ is an international studio, boasting a garden-like complex, complete with scenic destinations of mountains, rivers, reservoirs and wetlands.</p>
-    <p>Equidistantly nestled between Beijing and Shanghai, WSQ is found in the Huangdao district of Qingdao city. It is intimately connected to Hollywood: a high-performance, secure optical fiber studio backbone network links all production and postproduction facilities across the Pacific at an impressive rate of up to 40G.</p>
-    
-  </div>
-  
-    <div class="wanda-desc wow hidden-sm hidden-md hidden-lg fadeInUp animated pull-right">
-        <div class="wanda_layout"><img src="images/wanda-inset2.jpg" alt="Qingdao, CHINA" title="Qingdao, CHINA" /></div>
-        <div class="wanda-head">Qingdao</div>
-        <p>This city of rich history, both diverse and lively, graces the skyline with modern high-rises, and presents the world with a new addition: Wanda Studios Qingdao (WSQ). WSQ is an international studio, boasting a garden-like complex, complete with scenic destinations of mountains, rivers, reservoirs and wetlands.</p>
-        <p>Equidistantly nestled between Beijing and Shanghai, WSQ is found in the Huangdao district of Qingdao city. It is intimately connected to Hollywood: a high-performance, secure optical fiber studio backbone network links all production and postproduction facilities across the Pacific at an impressive rate of up to 40G.</p>
-        
-      </div>
-    
-   
+    <div class="wanda-desc wow hidden-xs desktop_gal fadeInUp animated_new pull-right">
+      <div class="wanda_layout"><img src="images/wanda-inset.jpg" alt="Layout of Wanda Studios Qingdao" title="Layout of Wanda Studios Qingdao"/></div>
+      <div class="wanda-head">Qingdao</div>
+      <p>This city of rich history, both diverse and lively, graces the skyline with modern high-rises, and presents the world with a new addition: Wanda Studios Qingdao (WSQ). WSQ is an international studio, boasting a garden-like complex, complete with scenic destinations of mountains, rivers, reservoirs and wetlands.</p>
+      <p>Equidistantly nestled between Beijing and Shanghai, WSQ is found in the Huangdao district of Qingdao city. It is intimately connected to Hollywood: a high-performance, secure optical fiber studio backbone network links all production and postproduction facilities across the Pacific at an impressive rate of up to 40G.</p>
+    </div>
+    <div class="wanda-desc wow hidden-sm hidden-md hidden-lg fadeInUp animated_new pull-right">
+      <div class="wanda_layout"><img src="images/wanda-inset2.jpg" alt="Qingdao, CHINA" title="Qingdao, CHINA" /></div>
+      <div class="wanda-head">Qingdao</div>
+      <p>This city of rich history, both diverse and lively, graces the skyline with modern high-rises, and presents the world with a new addition: Wanda Studios Qingdao (WSQ). WSQ is an international studio, boasting a garden-like complex, complete with scenic destinations of mountains, rivers, reservoirs and wetlands.</p>
+      <p>Equidistantly nestled between Beijing and Shanghai, WSQ is found in the Huangdao district of Qingdao city. It is intimately connected to Hollywood: a high-performance, secure optical fiber studio backbone network links all production and postproduction facilities across the Pacific at an impressive rate of up to 40G.</p>
+    </div>
   </div>
   
   <!-- Boat Animation-->
-  <div id="animation" class="ship desk tablet wow fadeInUp animated">
-    <img src="images/ship1_1.png" class="animated" />
-     <img src="images/ship1_2.png" class="animated" />
-      <img src="images/ship1_3.png" class="animated" />
-       <img src="images/ship1_4.png" class="animated" />
-        <img src="images/ship1_5.png" class="animated" />
-         <img src="images/ship1_6.png" class="animated" />
+  <div id="animation" class="ship desk tablet wow fadeInUp animated_new"> <img src="images/ship1_1.png" class="animated_new" /> <img src="images/ship1_2.png" class="animated_new" /> <img src="images/ship1_3.png" class="animated_new" /> <img src="images/ship1_4.png" class="animated_new" /> <img src="images/ship1_5.png" class="animated_new" /> <img src="images/ship1_6.png" class="animated_new" /> </div>
 </div>
-</div>
-
 <div class="clearfix"></div>
 
 <!-- Our World-Class Facilities -->
 <div id="fifth" data-section="testimonials" class="homeSlide">
   <div class="fifthsec">
-    <h2 class="wow fadeInUp animated">Our World-Class Facilities</h2>
-    <div class="hidden-xs desktop_gal wow fadeInUp animated">
+    <h2 class="wow fadeInUp animated_new">Our World-Class Facilities</h2>
+    <div class="hidden-xs desktop_gal wow fadeInUp animated_new">
       <div class="column-gal"> <img src="images/1.jpg" class="img-responsive" alt="Wanda Studios Qingdao is a USD$10 billion Investment by the Wanda Group" title="Wanda Studios Qingdao is a USD$10 billion Investment by the Wanda Group"><img src="images/1img.jpg" class="img-responsive"> <img src="images/2.jpg" class="img-responsive" alt="World’s Largest Sound Stage at 10,000 m&sup2;" title="World’s Largest Sound Stage at 10,000 m&sup2;"><img src="images/2img.jpg" class="img-responsive"> </div>
       <div class="column-gal"> <img src="images/3.jpg" class="img-responsive"><img src="images/3img.jpg" class="img-responsive" alt="World-Class Facilities: 30 Sound Stages" title="World-Class Facilities: 30 Sound Stages"> <img src="images/4.jpg" class="img-responsive"><img src="images/4img.jpg" class="img-responsive" alt="Stunning Natural Scenic Locations, Plus Unlimited Backlot Capabilities Built to Order" title="Stunning Natural Scenic Locations, Plus Unlimited Backlot Capabilities Built to Order"> </div>
       <div class="column-gal"> <img src="images/5.jpg" class="img-responsive"><img src="images/5img.jpg" class="img-responsive"> <img src="images/6.jpg" class="img-responsive" alt="China’s Largest Water Tank at 6500 m&sup2;, holding 9315 m&sup3; of Water" title="China’s Largest Water Tank at 6500 m&sup2;, holding 9315 m&sup3; of Water"><img src="images/6img.jpg" class="img-responsive"> </div>
@@ -389,12 +372,12 @@ vid: 'XMTQyMzUxMjkwMA=='
     </div>
     <div class="clearfix"></div>
   </div>
- </div>
+</div>
 <div class="clearfix"></div>
 
 <!-- What We Offer -->
 <div id="sixth" data-section="pricing">
-  <div class="relative fixheight wow fadeInUp animated">
+  <div class="relative fixheight wow fadeInUp animated_new">
     <div class="texture pad desk">
       <div id="wordcloud"> <span class="wordcontainer" id="word01"><span class="word">Well-designed Production Offices</span></span> <span class="wordcontainer" id="word02"><span class="word">Interpretation<br>
         Services</span></span> <span class="wordcontainer" id="word03"><span class="word">Sign & Graphics<br>
@@ -405,8 +388,10 @@ vid: 'XMTQyMzUxMjkwMA=='
         Material Supply</span></span> <span class="wordcontainer" id="word21"><span class="word">Security        Services</span></span> <span class="wordcontainer" id="word22"><span class="word">Set Design</span></span> <span class="wordcontainer" id="word23"><span class="word">Expendables</span></span> <span class="wordcontainer" id="word24"><span class="word">IT & System Administration</span></span> <span class="wordcontainer" id="word25"><span class="word">Public and Corporate<br>
         Relations</span></span> <span class="wordcontainer" id="word26"><span class="word">Film Trailer Production Service</span></span> <span class="wordcontainer" id="word27"><span class="word">Motion Capture</span></span> <span class="wordcontainer" id="word28"><span class="word">Video Game<br>
         Development</span></span> <span class="wordcontainer" id="word29"><span class="word">Legal Counsel</span></span> <span class="wordcontainer" id="word30"><span class="word">Paint<br>
-        Shop</span></span> <span class="wordcontainer" id="word31"><span class="word">Motion Control</span></span> <span class="wordcontainer" id="word32"><span class="word">Hair & Makeup<br/>Service</span></span> <span class="wordcontainer" id="word33"><span class="word">Digital Connectivity<br>
-        Service</span></span> <span class="wordcontainer" id="word34"><span class="word">Sound Recording,<br>Foley</span></span>
+        Shop</span></span> <span class="wordcontainer" id="word31"><span class="word">Motion Control</span></span> <span class="wordcontainer" id="word32"><span class="word">Hair & Makeup<br/>
+        Service</span></span> <span class="wordcontainer" id="word33"><span class="word">Digital Connectivity<br>
+        Service</span></span> <span class="wordcontainer" id="word34"><span class="word">Sound Recording,<br>
+        Foley</span></span>
         <p class="clearfix"></p>
       </div>
     </div>
@@ -444,48 +429,47 @@ vid: 'XMTQyMzUxMjkwMA=='
 <div id="seventh" data-section="press">
   <div class="section7">
     <div class="formwrap">
-      <div class="formrgh wow fadeInUp animated">
+      <div class="formrgh wow fadeInUp animated_new">
         <h3>Get in Touch</h3>
         <p class="textcont">Wanda Studios Qingdao stands as the world’s largest film and television studio, promising state-of-the-art facilities and world-class production services – creating excitement for all filmmakers, directors and movie enthusiasts. If you would like to learn more about Wanda Studios Qingdao, please leave us a note and we will get back to you as soon as possible.</p>
         <p class="textcont">We look forward to hearing from you. You may connect with a representative at: <a class="mailcolor" href="&#109;&#x61;&#x69;&#108;&#116;&#x6f;&#x3a;&#x69;&#110;&#102;&#x6f;&#64;&#x77;&#x61;&#110;&#x64;&#97;&#115;&#116;&#117;&#x64;&#x69;&#111;&#x73;&#46;&#x63;&#x6f;&#x6d;">&#x69;&#110;&#102;&#x6f;&#64;&#x77;&#x61;&#110;&#x64;&#97;&#115;&#116;&#117;&#x64;&#x69;&#111;&#x73;&#46;&#x63;&#x6f;&#x6d;</a> </p>
-        <div class="status alert alert-success" style="display: none"></div>
+        <div class="formstatus status alert alert-success" style="display: none"></div>
         <form method="post" id="main-contact-form" class="col s12 contact-form" name="contact-form" action="" >
           <div id = "formHide">
-		  <div class="row">
-            <div class="input-field col s6">
-              <input name="name" id="username" type="text" class="validate" required>
-              <label for="username">Name<i class="fa fa-asterisk"></i></label>
+            <div class="row">
+              <div class="input-field col s6">
+                <input name="name" id="username" type="text" class="validate" required>
+                <label for="username">Name<i class="fa fa-asterisk"></i></label>
+              </div>
+              <div class="input-field col s6">
+                <input name="email" id="email" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" class="validate" autocomplete="off" required >
+                <label for="email" >Email<i class="fa fa-asterisk"></i></label>
+              </div>
             </div>
-            <div class="input-field col s6">
-              <input name="email" id="email" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" class="validate" autocomplete="off" required >
-              <label for="email" >Email<i class="fa fa-asterisk"></i></label>
+            <div class="row">
+              <div class="input-field col s12">
+                <input name="company" id="companyname" type="text" class="validate"  >
+                <label for="companyname">Company Name</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input name="subject" id="subject" type="text" class="validate"  >
+                <label for="subject">Subject</label>
+              </div>
+            </div>
+            <div class="row texarrea">
+              <div class="input-field col s12">
+                <textarea name="message" id="textarea1" class="materialize-textarea" type="text" required></textarea>
+                <label for="textarea1">Message<i class="fa fa-asterisk"></i></label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="inputwrapper col s12">
+                <input type="submit" name="submit" id="submit" class="send-btn" value="Submit">
+              </div>
             </div>
           </div>
-          <div class="row">
-            <div class="input-field col s12">
-              <input name="company" id="companyname" type="text" class="validate"  >
-              <label for="companyname">Company Name</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12">
-              <input name="subject" id="subject" type="text" class="validate"  >
-              <label for="subject">Subject</label>
-            </div>
-          </div>
-          <div class="row texarrea">
-            <div class="input-field col s12">
-              <textarea name="message" id="textarea1" class="materialize-textarea" type="text" required></textarea>
-              <label for="textarea1">Message<i class="fa fa-asterisk"></i></label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="inputwrapper col s12">
-              <input type="submit" name="submit" id="submit" class="send-btn" value="Submit">
-            </div>
-          </div>
-          </div>
-          
         </form>
       </div>
     </div>
@@ -524,7 +508,7 @@ vid: 'XMTQyMzUxMjkwMA=='
 <script src="frameworks/materialize.min.js"></script> 
 
 <!-- Main JS (Do not remove) --> 
-<script src="js/main.js"></script>
+<script src="js/main.js"></script> 
 <script>
 // Contact form
 	$(function(){
@@ -564,7 +548,7 @@ vid: 'XMTQyMzUxMjkwMA=='
 				$('.formwrap p.textcont').hide();
 				$('#formHide').hide();
 				$('.formwrap .send').hide();
-				form_status.html('<p class="text-success">' + data.message + '</p>');
+				form_status.html('<p class="text-success">' + data.message + '</p><p id="showform" onclick="showForm();"><a class="btn">Close</a></p>');
 				form[0].reset();
 			});
 		});
@@ -593,6 +577,18 @@ vid: 'XMTQyMzUxMjkwMA=='
 				form[0].reset();
 			});
 		});*/
-	</script>
+	</script> 
+<script>
+    function showForm()
+	{
+		$('.formwrap h3').show();
+				$('.formwrap p.textcont').show();
+				$('#formHide').show();
+				$('.formwrap .send').show();
+				$('#showform').hide();
+				$('.form_status').hide();
+				
+	}
+    </script>
 </body>
 </html>

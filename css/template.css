@@ -6,6 +6,7 @@
 	background: url('../images/spinner.gif') center no-repeat; background-size:60px auto;
 	height:60px;
 	width:60px;
+	margin-top:-30px;
 }
 #jprePercentage, #jpreBar{ position:absolute; }
 #jprePercentage{ text-align:center; /*padding-top:18px;*/ font-size:14px; line-height:60px; height:60px; color:#fff; }
@@ -51,12 +52,12 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 
 @font-face {
   font-family: 'OpenSans-ExtraBold';
-  src: url('../fonts/OpenSans-ExtraBold.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/OpenSans-ExtraBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/OpenSans-ExtraBold.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/OpenSans-ExtraBold.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../fonts/OpenSans-ExtraBold.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/OpenSans-ExtraBold.svg#svgFontName') format('svg'); /* Legacy iOS */
+  src: url('../fonts/opensans-extrabold.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/opensans-extrabold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/opensans-extrabold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/opensans-extrabold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/opensans-extrabold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/opensans-extrabold.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
 
@@ -439,11 +440,11 @@ body {
 }
 
 @media (min-width:992px){
-	#intro-video-china{ height:348px; width:70%; position:absolute; top:75px; right:30px;}
+	#intro-video-china{ height:348px; width:70%; position:absolute; top:0; right:0;}
 	#third .timeline-video #intro-video iframe {width:70%; height:348px;}
 }
 @media (min-width:992px) and (max-width:1114px) {
-	#intro-video-china{ height:300px; width:70%; position:absolute; top:46px; right:78px;}
+	#intro-video-china{ height:300px; width:70%; position:absolute; top:0; right:0x;}
 	#third .time-line{margin-left:-75px;}
 	#third .timeline-video #intro-video iframe {width:70%; height:300px;}
 }
@@ -1015,3 +1016,61 @@ footer {
 
 }
 
+
+
+
+
+
+/************************/
+/* CSS Animation */
+/************************/
+
+.animated_new {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated_new.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    /*-webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);*/
+    -webkit-transform: translate3d(0, 50px, 0);
+    transform: translate3d(0, 50px, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    /*-webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);*/
+    -webkit-transform: translate3d(0, 50px, 0);
+    transform: translate3d(0, 50px, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}

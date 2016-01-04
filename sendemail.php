@@ -2,7 +2,7 @@
 	header('Content-type: application/json');
 	$status = array(
 		'type'=>'success',
-		'message'=>'<br><p style="font-size:1.8em; padding:0.5em 0; color:#07baba">Thank You</p><p style="color:#fff;  font-size:14px; line-height:19px; margin:0 0 10px;">Thank you for your interest in Wanda Studios Qingdao. A representative will be in touch with you as soon as possible.</br></br><p><br>'
+		'message'=>'<br><p style="font-size:1.8em; padding:0.5em 0; color:#07baba">Thank You</p><p style="color:#fff;  font-size:14px; line-height:19px; margin:0 0 10px;">Thank you for your interest in Wanda Studios Qingdao. A representative will be in touch with you as soon as possible.</br></br><p>'
 	);
 
     $name = @trim(stripslashes($_POST['name'])); 
