@@ -453,10 +453,10 @@ if(typeof jQuery == 'undefined')
                 //console.log(response.city, response.country);
 
                 if (response.country == "CN") {
-                    $("#intro-video").remove();
+                    $("#intro-video").hide();
                     $("#intro-video-china").show();
                 } else {
-                    $("#intro-video-china").remove();
+                    $("#intro-video-china").hide();
                     $("#intro-video").show();
                 }
             }, "jsonp");	
