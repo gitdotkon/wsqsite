@@ -9,7 +9,7 @@ function is_weixn(){
 
 if(is_weixn()){
 
-        var imgUrl = "http://staging.wandastudios.com/images/fx.png";
+        var imgUrl = "http://staging.wandastudios.com/images/fx.jpg";
         var lineLink = "http://www.wandastudios.com";
         var descContent = 'Get to know more about Wanda Studios Qingdao.';
         var shareTitle = 'Wandastudios.com';
