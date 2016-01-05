@@ -168,13 +168,13 @@ if(typeof jQuery == 'undefined')
         <h2 class="wow fadeInUp  animated_new text-center" style="visibility: visible; animation-name: fadeInUp; font-size:30px; margin-top:-20px; padding-bottom:20px;">Our Timeline</h2>
         <div class="col-xs-12 col-sm-12 col-md-6">
           <div id="intro-video-china" style="display: none;">
-         <script type="text/javascript" src="http://player.youku.com/jsapi">
-			player = new YKU.Player('intro-video-china',{
-			styleid: '0',
-			client_id: 'de97d57c91a4de7d',
-			vid: 'XMTQyMzUxMjkwMA=='
-			});
-			</script>
+			 <script type="text/javascript" src="http://player.youku.com/jsapi">
+                player = new YKU.Player('intro-video-china',{
+                styleid: '0',
+                client_id: 'de97d57c91a4de7d',
+                vid: 'XMTQyMzUxMjkwMA=='
+                });
+                </script>
             
 
           </div>
@@ -450,7 +450,8 @@ if(typeof jQuery == 'undefined')
 <script>
 // Ip Address Detect
  $.get("http://ipinfo.io", function (response) {
-                //console.log(response.city, response.country);
+	
+               // console.log(response.city, response.country);
 
                 if (response.country == "CN") {
                     $("#intro-video").hide();
