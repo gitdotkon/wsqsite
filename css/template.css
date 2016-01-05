@@ -1,4 +1,5 @@
 /* preloader */
+html{background:none;}
 .clearFix:after{display:block; clear:both; content:'';}
 .clearFix{zoom:1;}
 #jpreOverlay{ background:#fff; z-index:9999999999999 !important; }
@@ -115,7 +116,7 @@ body {
   font-size: 14px;
   line-height: 1.8;
   color: #000;
-  background: #fff;
+  background: #fff!important;
   height: 100%;
   position: relative;
 }
@@ -414,7 +415,7 @@ body {
 }
 
 #third .mobile-record{ max-width:640px; width:100%; margin:0 auto; padding-bottom:40px; }
-#third .mobile-record li{ background:url(../images/list-icon.jpg) no-repeat left 8px; padding-left:25px; }
+#third .mobile-record li{ background:url(../images/list-icon.jpg) no-repeat left 8px; padding-left:25px; text-align:left; }
 #third .mobile-record li h5{ color:#ed1c24; font-size:24px; font-weight:bold; }
 #third .mobile-record li p{ line-height:normal; color:#333333; font-size:26px; }
 #third .mobile-record li h5 span{ font-size:24px; color:#330000; }
@@ -443,15 +444,15 @@ body {
 
 @media (min-width:992px){
 	#intro-video-china{ height:348px; width:70%; position:absolute; top:0; right:0;}
-	#third .timeline-video #intro-video iframe {width:70%; height:348px;}
+	#third .timeline-video #intro-video iframe {width:70%; height:300px;}
 }
 @media (min-width:992px) and (max-width:1114px) {
 	#intro-video-china{ height:300px; width:70%; position:absolute; top:0; right:0x;}
 	#third .time-line{margin-left:-75px;}
-	#third .timeline-video #intro-video iframe {width:70%; height:300px;}
+	#third .timeline-video #intro-video iframe {width:70%; height:250px;}
 }
 @media screen and (max-width:1024px){	
-#intro-video-china,#third .timeline-video #intro-video iframe { height:348px;}
+#intro-video-china,#third .timeline-video #intro-video iframe { height:230px;}
 	#third{ padding-top:120px; }
 	#third .top-timeline li, .bottom-timeline li{ width:135px; }
 	#third .bottom-timeline{ margin-left:65px; }		
@@ -486,7 +487,7 @@ body {
 #third .mobile-record li h5 span {
     font-size: 18px;
 }
-#third .mobile-record li{ background-position:left 4px; padding-bottom:10px;}
+#third .mobile-record li{ background-position:left 4px; padding-bottom:10px; text-align:left;}
 #third .row{margin-bottom:0;}
 
 }
@@ -1075,4 +1076,10 @@ footer {
 .fadeInUp {
   -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp;
+}
+
+@media screen and (min-width:991px){
+#intro-video{margin-top:70px!important}
+#intro-video-china{margin-top:70px!important; margin-right: 87px;}
+
 }
