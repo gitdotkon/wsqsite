@@ -30,23 +30,23 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 
 @font-face {
   font-family: 'OpenSansRegular';
-  src: url('../fonts/OpenSans-Regular.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/OpenSans-Regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/OpenSans-Regular.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../fonts/OpenSans-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/OpenSans-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+  src: url('../fonts/opensans-regular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/opensans-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/opensans-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/opensans-regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/opensans-regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/opensans-regular.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
 
 @font-face {
   font-family: 'OpenSans-Semibold';
-  src: url('../fonts/OpenSans-Semibold.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/OpenSans-Semibold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/OpenSans-Semibold.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/OpenSans-Semibold.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../fonts/OpenSans-Semibold.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/OpenSans-Semibold.svg#svgFontName') format('svg'); /* Legacy iOS */
+  src: url('../fonts/opensans-semibold.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/opensans-semibold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/opensans-semibold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/opensans-semibold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/opensans-semibold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/opensans-semibold.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
 
@@ -63,12 +63,12 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 
 @font-face {
   font-family: 'RelewayRegular';
-  src: url('../fonts/Raleway-Regular.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/Raleway-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/Raleway-Regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/Raleway-Regular.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../fonts/Raleway-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/Raleway-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+  src: url('../fonts/raleway-regular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/raleway-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/raleway-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/raleway-regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/raleway-regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/raleway-regular.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
 @font-face {
@@ -346,7 +346,7 @@ body {
 .time-line .horizontalline{ position:relative; }
 #third .time-line hr{ position:absolute; top:50%; width:100%; color:#b7b7b7; background:#b7b7b7; height:1px; border:none; margin:0; }
 #third .top-timeline, #third .bottom-timeline{ /*position:absolute; top:50%;*/ display:table; margin:0; }
-#third .top-timeline li, .bottom-timeline li{ height:235px; border-left:1px solid #b7b7b7; float:left; width:160px; padding:0 10px; }
+#third .top-timeline li, .bottom-timeline li{ height:235px; border-left:1px solid #b7b7b7; float:left; width:160px; padding:0 10px; text-align:left; }
 #third .top-timeline li h5, .bottom-timeline li h5{ color:#ed1c24; font-size:14px; height:60px; line-height:normal; }
 #third .top-timeline li h5 span, .bottom-timeline li h5 span{ display:block; font-size:24px; color:#330000; line-height:28px; }
 #third .top-timeline li h5, .bottom-timeline li h5{ font-family:OpenSans-Semibold; }
@@ -432,11 +432,13 @@ body {
 	#third .top-timeline{ margin-top:0px; }
 	/*#third .time-line{margin-left:-26px;}*/
 	#intro-video-china,#third .timeline-video #intro-video iframe { height:348px;}
+	
 } /*(min-width:992px) and */
 @media(max-width:1174px) {
 	/*#intro-video-china{ position:absolute; right:40px;}*/
 	#third .time-line{margin-left:-30px;}
 	#intro-video-china,#third .timeline-video #intro-video iframe { height:348px;}
+	#third .timeline-video{ text-align:center; }
 }
 
 @media (min-width:992px){

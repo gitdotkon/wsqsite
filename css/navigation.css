@@ -11,7 +11,7 @@
 
 .navbar-nav a:hover, a:focus {background-color:red; text-decoration:none; color:#fff;}
 
-.navigation_bar{background:#d60000; height:92px; position:fixed; z-index:99999999999; width:100%; -webkit-box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.36);
+.navigation_bar{background:#d60000; height:92px; position: fixed; z-index:99999999999; width:100%; -webkit-box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.36);
 -moz-box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.36);
 box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.36);}
 .navigation_bar .logo_promise {
@@ -27,6 +27,7 @@ nav {
     background: none!important;
     box-shadow: none!important;
 }
+.smallheader {position:fixed;}
 .smallheader .logo_promise {width:200px;}
 .smallheader .logo_promise img{width:100%;}
 .smallheader .navbar-brand {
