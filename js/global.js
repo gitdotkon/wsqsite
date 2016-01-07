@@ -11,8 +11,12 @@
 				//passing Splash Screen script to jPreLoader
 				//$('body').children('section').not('.selected').hide();
 				//$('body').hide().fadeIn(800);	
-				$('body').show();
+				
+				$('#maindiv').show();
+				$('#main_container').show();
 				$('#fh5co-header').show();
+				$('#jpreSlide').remove();
+				$('#jpreLoader').remove();
 				//timer = setInterval(function() {
 //					splashRotator();
 //				}, 4000);
