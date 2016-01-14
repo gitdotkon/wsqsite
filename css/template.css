@@ -84,7 +84,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 
 
 .desk,.tablet,.pad,.mobile{display: none;}
-
+p{margin:0; padding:0;}
 @media (max-width:1023px){
   .ipad1{display: none!important;}
 }
@@ -1083,3 +1083,24 @@ footer {
 #intro-video-china{margin-top:70px!important; margin-right: 87px;}
 
 }
+
+/*404*/
+.wrapper{width:100%; height:100%; background:url(../images/bg-2-large.jpg) #dd2422 no-repeat; background-size:cover; background-position:center center; position:relative; color:#fff; font-family:"RelewayRegular",Arial,sans-serif;}
+.mobilecont{display:none; position:relative; top:90px;}
+.wrapper a{color:#fff; text-decoration:underline;}
+@media (max-width:767px){
+	.wrapper{width:100%; height: 100%;background:url(../images/bg-2-mobile.jpg) #dd2422 no-repeat;background-size:cover; background-position:center center; }
+	.wrapper .cont{display:none;}
+	.wrapper .mobilecont{display:block;width:100%; text-align:center; background:url(../images/bg-2-mobile.jpg) #dd2422 no-repeat;background-size:cover; background-position:center center;}
+}
+.wrapper h3{margin:0; font-size:30px; line-height:40px;}
+.wrapper p{font-size:20px; line-height:30px; padding-bottom:40px; }
+.cont{position:absolute; top:50%; left:50%; width:700px; margin-left:-350px; height:460px; margin-top:-230px; text-align:center;}
+.cont ul{width:612px; position:absolute; left:50%; margin-left:-306px;}
+.cont ul li{float:left;margin-right:20px;}
+.cont p.last{position:relative; top:320px; }
+.wrapper .mobilecont h3{font-size:22px; line-height:20px; padding:20px 15px; }
+.wrapper .mobilecont p{font-size:16px; line-height:18px; padding:0 15px;}
+.wrapper .mobilecont ul{position:relative; left:50%; width:286px; margin-left:-143px; top:20px;}
+.wrapper .mobilecont ul li{padding-bottom:10px;}
+.wrapper .mobilecont p.last{position:relative;padding:20px 0 30px;}
