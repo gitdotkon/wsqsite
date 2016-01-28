@@ -279,7 +279,7 @@ $(document).ready(function(e) {
         
 //        Added by neetu varshney
          var countdownHtml='';
-         var firstDate =  new Date("2017-09-09");
+         var firstDate =  new Date("2018-08-08");
         var secondDate = new Date(); 
         var  diffc = firstDate.getTime() - secondDate.getTime();
         var countdowndays = parseInt(Math.round(Math.abs(diffc/(1000*60*60*24))));
